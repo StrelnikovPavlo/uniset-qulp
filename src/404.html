@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/head/_head.htm',{
+"title":"404"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header/_header.htm',{})
+      <main class="error-page">
+         <div class="error-page__img">
+            <img src="@img/404.png" alt="404">
+         </div>
+         <div class="error-page__content">
+            <span class="error-page__label">Ой...</span>
+            <p class="error-page__text">Здається, щось пішло не так, ми не знайшли потрібну сторінку. Спробуйте перезавантажити сторінку або поверніться до головної.</p>
+            <a href="#" class="error-page__home btn btn-blue">На головну</a>
+         </div>
+      </main>
+      @@include('html/footer/_footer.htm',{})
+   </div>
+   @@include('html/javascript/_js.htm',{})
+</body>
+
+</html>

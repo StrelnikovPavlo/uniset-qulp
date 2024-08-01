@@ -1,0 +1,45 @@
+.rating {
+	display: inline-flex;
+	justify-content: flex-start;
+	flex-direction: row-reverse;
+	align-items: center;
+	width: 100%;
+	unicode-bidi: bidi-override;
+   direction: rtl;
+}
+
+.rating__label{
+	@include adaptiveValue("font-size", 16, 14);
+	color: $grayColor;
+	margin-right: 3px;
+}
+
+.rating__row{
+
+}
+
+.rating input {
+	display: none;
+}
+
+.rating label {
+	display: inline-block;
+	margin-left: -4px;
+	cursor: pointer;
+
+	svg {
+		path {
+			fill: #ECECEC;
+		}
+	}
+}
+
+.rating label:hover,
+.rating label:hover~label,
+.rating input:checked~label {
+	svg {
+		path {
+			fill: #FFC803;
+		}
+	}
+}

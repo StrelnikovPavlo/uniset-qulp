@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/head/_head.htm',{
+"title":"порівняння"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header/_header.htm',{})
+      <main class="comparison-page">
+         <nav aria-label="breadcrumb">
+            <div class="breadcrumb__container">
+               <ol class="breadcrumb">
+                  <li class="breadcrumb__item"><a href="#">Головна</a></li>
+                  <li class="breadcrumb__item _active" aria-current="page">Порівняння</li>
+               </ol>
+            </div>
+         </nav>
+         <section class="comparison-page__body comparison">
+            <div class="comparison__container">
+               <h1 class="comparison__title title-page">порівняння</h1>
+               <table class="comparison__table table-comparison">
+                  <thead class="table-comparison__header">
+                     <tr>
+                        <th>
+                           <button type="button" class="comparison__clear d-flex">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                 <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="#ECECEC" />
+                                 <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#969696" />
+                                 <path
+                                    d="M21.4158 20.0041L25.7158 15.7141C25.9041 15.5258 26.0099 15.2704 26.0099 15.0041C26.0099 14.7378 25.9041 14.4824 25.7158 14.2941C25.5275 14.1058 25.2721 14 25.0058 14C24.7395 14 24.4841 14.1058 24.2958 14.2941L20.0058 18.5941L15.7158 14.2941C15.5275 14.1058 15.2721 14 15.0058 14C14.7395 14 14.4841 14.1058 14.2958 14.2941C14.1075 14.4824 14.0017 14.7378 14.0017 15.0041C14.0017 15.2704 14.1075 15.5258 14.2958 15.7141L18.5958 20.0041L14.2958 24.2941C14.2021 24.3871 14.1277 24.4977 14.0769 24.6195C14.0261 24.7414 14 24.8721 14 25.0041C14 25.1361 14.0261 25.2668 14.0769 25.3887C14.1277 25.5105 14.2021 25.6211 14.2958 25.7141C14.3888 25.8078 14.4994 25.8822 14.6212 25.933C14.7431 25.9838 14.8738 26.0099 15.0058 26.0099C15.1378 26.0099 15.2685 25.9838 15.3904 25.933C15.5122 25.8822 15.6228 25.8078 15.7158 25.7141L20.0058 21.4141L24.2958 25.7141C24.3888 25.8078 24.4994 25.8822 24.6212 25.933C24.7431 25.9838 24.8738 26.0099 25.0058 26.0099C25.1378 26.0099 25.2685 25.9838 25.3904 25.933C25.5122 25.8822 25.6228 25.8078 25.7158 25.7141C25.8095 25.6211 25.8839 25.5105 25.9347 25.3887C25.9855 25.2668 26.0116 25.1361 26.0116 25.0041C26.0116 24.8721 25.9855 24.7414 25.9347 24.6195C25.8839 24.4977 25.8095 24.3871 25.7158 24.2941L21.4158 20.0041Z"
+                                    fill="#969696" />
+                              </svg>
+                              <span>Очистити список</span>
+                           </button>
+                        </th>
+                        <td>
+                           <div class="comparison__slider">
+                              <div class="comparison__nav comparison__nav-left">
+                                 <button type="button" class="nav nav-prev nav-green">
+                                    <svg class="nav-next-icon" width="12" height="8">
+                                       <use xlink:href="@img/icons/icons.svg#lang-arrow"></use>
+                                    </svg>
+                                 </button>
+                              </div>
+                              <div class="comparison__overlay swiper">
+                                 <div class="comparison__wrapper swiper-wrapper">
+                                    <div class="product-cart swiper-slide">
+                                       <div class="product-cart__picture">
+                                          <div class="product-cart__sales">
+                                             <div class="sale sale-red">Знижка %</div>
+                                          </div>
+                                          <a href="#" class="product-cart__img">
+                                             <img src="@img/products/01.png" alt="img">
+                                          </a>
+                                       </div>
+                                       <div class="product-cart__content">
+                                          <div class="product-cart__head">
+                                             <div class="product-cart__row">
+                                                <div>
+                                                   <div class="product-cart__reviews d-flex">
+                                                      <div class="product-cart__stars">
+                                                         <svg class="star-yellow" width="17" height="17">
+                                                            <use xlink:href="@img/icons/icons.svg#star-yellow"></use>
+                                                         </svg>
+                                                         <svg class="star-yellow" width="17" height="17">
+                                                            <use xlink:href="@img/icons/icons.svg#star-yellow"></use>
+                                                         </svg>
+                                                         <svg class="star-yellow" width="17" height="17">
+                                                            <use xlink:href="@img/icons/icons.svg#star-yellow"></use>
+                                                         </svg>
+                                                         <svg class="star-yellow" width="17" height="17">
+                                                            <use xlink:href="@img/icons/icons.svg#star-yellow"></use>
+                                                         </svg>
+                                                         <svg class="star-gray" width="17" height="17">
+                                                            <use xlink:href="@img/icons/icons.svg#star-gray"></use>
+                                                         </svg>
+                                                      </div>
+                                                      <a href="#" class="product-cart__quantity">15 відгуків</a>
+                                                   </div>
+                                                   <div class="status green">У наявності</div>
+                                                </div>
+                                             </div>
+                                             <a href="#" class="product-cart__title">132F0001 Перетворювач частоти Danfoss VLT
+                                                Micro Drive FC-51</a>
+                                          </div>
+                                          <div class="product-cart__main">
+                                             <div class="product-cart__line">
+                                                <span>Серія</span>
+                                                <span>Фронтальний</span>
+                                             </div>
+                                             <div class="product-cart__line">
+                                                <span>Напруга на вході, В</span>
+                                                <span>230</span>
+                                             </div>
+                                             <div class="product-cart__line">
+                                                <span>Макс. робочий струм, А</span>
+                                                <span>1.2</span>
+                                             </div>
+                                          </div>
+                                          <div class="product-cart__footer">
+                                             <div class="product-cart__price d-flex">
+                                                <div class="product-cart__old-price">5 677,50 ₴</div>
+                                                <span>5 588,50 ₴</span>
+                                             </div>
+                                             <button type="button"
+                                                class="product-cart__buy btn btn-blue btn-product _active">Купити</btn>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="product-cart swiper-slide">   
+                                       <div class="product-cart__picture">
+                                          <div class="product-cart__sales">
+                                             <div class="sale sale-red">Знижка %</div>
+                                          </div>
+                                          <a href="#" class="product-cart__img">
+                                             <img src="@img/products/01.png" alt="img">
+                                          </a>
+                                       </div>
+                                       <div class="product-cart__content">
+                                          <div class="product-cart__head">
+                                             <div class="product-cart__row">
+                                                <div>
+                                                   <div class="product-cart__reviews d-flex">
+                                                      <div class="product-cart__stars">
+                                                         <svg class="star-yellow" width="17" height="17">
+                                                            <use xlink:href="@img/icons/icons.svg#star-yellow"></use>
+                                                         </svg>
+                                                         <svg class="star-yellow" width="17" height="17">
+                                                            <use xlink:href="@img/icons/icons.svg#star-yellow"></use>
+                                                         </svg>
+                                                         <svg class="star-yellow" width="17" height="17">
+                                                            <use xlink:href="@img/icons/icons.svg#star-yellow"></use>
+                                                         </svg>
+                                                         <svg class="star-yellow" width="17" height="17">
+                                                            <use xlink:href="@img/icons/icons.svg#star-yellow"></use>
+                                                         </svg>
+                                                         <svg class="star-gray" width="17" height="17">
+                                                            <use xlink:href="@img/icons/icons.svg#star-gray"></use>
+                                                         </svg>
+                                                      </div>
+                                                      <a href="#" class="product-cart__quantity">15 відгуків</a>
+                                                   </div>
+                                                   <div class="status green">У наявності</div>
+                                                </div>
+                                             </div>
+                                             <a href="#" class="product-cart__title">132F0001 Перетворювач частоти Danfoss VLT
+                                                Micro Drive FC-51</a>
+                                          </div>
+                                          <div class="product-cart__main">
+                                             <div class="product-cart__line">
+                                                <span>Серія</span>
+                                                <span>Фронтальний</span>
+                                             </div>
+                                             <div class="product-cart__line">
+                                                <span>Напруга на вході, В</span>
+                                                <span>230</span>
+                                             </div>
+                                             <div class="product-cart__line">
+                                                <span>Макс. робочий струм, А</span>
+                                                <span>1.2</span>
+                                             </div>
+                                          </div>
+                                          <div class="product-cart__footer">
+                                             <div class="product-cart__price d-flex">
+                                                <div class="product-cart__old-price">5 677,50 ₴</div>
+                                                <span>5 588,50 ₴</span>
+                                             </div>
+                                             <button type="button"
+                                                class="product-cart__buy btn btn-blue btn-product _active">Купити</btn>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="product-cart swiper-slide">   
+                                       <div class="product-cart__picture">
+                                          <div class="product-cart__sales">
+                                             <div class="sale sale-red">Знижка %</div>
+                                          </div>
+                                          <a href="#" class="product-cart__img">
+                                             <img src="@img/products/01.png" alt="img">
+                                          </a>
+                                       </div>
+                                       <div class="product-cart__content">
+                                          <div class="product-cart__head">
+                                             <div class="product-cart__row">
+                                                <div>
+                                                   <div class="product-cart__reviews d-flex">
+                                                      <div class="product-cart__stars">
+                                                         <svg class="star-yellow" width="17" height="17">
+                                                            <use xlink:href="@img/icons/icons.svg#star-yellow"></use>
+                                                         </svg>
+                                                         <svg class="star-yellow" width="17" height="17">
+                                                            <use xlink:href="@img/icons/icons.svg#star-yellow"></use>
+                                                         </svg>
+                                                         <svg class="star-yellow" width="17" height="17">
+                                                            <use xlink:href="@img/icons/icons.svg#star-yellow"></use>
+                                                         </svg>
+                                                         <svg class="star-yellow" width="17" height="17">
+                                                            <use xlink:href="@img/icons/icons.svg#star-yellow"></use>
+                                                         </svg>
+                                                         <svg class="star-gray" width="17" height="17">
+                                                            <use xlink:href="@img/icons/icons.svg#star-gray"></use>
+                                                         </svg>
+                                                      </div>
+                                                      <a href="#" class="product-cart__quantity">15 відгуків</a>
+                                                   </div>
+                                                   <div class="status green">У наявності</div>
+                                                </div>
+                                             </div>
+                                             <a href="#" class="product-cart__title">132F0001 Перетворювач частоти Danfoss VLT
+                                                Micro Drive FC-51</a>
+                                          </div>
+                                          <div class="product-cart__main">
+                                             <div class="product-cart__line">
+                                                <span>Серія</span>
+                                                <span>Фронтальний</span>
+                                             </div>
+                                             <div class="product-cart__line">
+                                                <span>Напруга на вході, В</span>
+                                                <span>230</span>
+                                             </div>
+                                             <div class="product-cart__line">
+                                                <span>Макс. робочий струм, А</span>
+                                                <span>1.2</span>
+                                             </div>
+                                          </div>
+                                          <div class="product-cart__footer">
+                                             <div class="product-cart__price d-flex">
+                                                <div class="product-cart__old-price">5 677,50 ₴</div>
+                                                <span>5 588,50 ₴</span>
+                                             </div>
+                                             <button type="button"
+                                                class="product-cart__buy btn btn-blue btn-product _active">Купити</btn>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="product-cart swiper-slide">
+                                       <div class="product-cart__picture">
+                                          <div class="product-cart__sales">
+                                             <div class="sale sale-red">Знижка %</div>
+                                          </div>
+                                          <a href="#" class="product-cart__img">
+                                             <img src="@img/products/01.png" alt="img">
+                                          </a>
+                                       </div>
+                                       <div class="product-cart__content">
+                                          <div class="product-cart__head">
+                                             <div class="product-cart__row">
+                                                <div>
+                                                   <div class="product-cart__reviews d-flex">
+                                                      <div class="product-cart__stars">
+                                                         <svg class="star-yellow" width="17" height="17">
+                                                            <use xlink:href="@img/icons/icons.svg#star-yellow"></use>
+                                                         </svg>
+                                                         <svg class="star-yellow" width="17" height="17">
+                                                            <use xlink:href="@img/icons/icons.svg#star-yellow"></use>
+                                                         </svg>
+                                                         <svg class="star-yellow" width="17" height="17">
+                                                            <use xlink:href="@img/icons/icons.svg#star-yellow"></use>
+                                                         </svg>
+                                                         <svg class="star-yellow" width="17" height="17">
+                                                            <use xlink:href="@img/icons/icons.svg#star-yellow"></use>
+                                                         </svg>
+                                                         <svg class="star-gray" width="17" height="17">
+                                                            <use xlink:href="@img/icons/icons.svg#star-gray"></use>
+                                                         </svg>
+                                                      </div>
+                                                      <a href="#" class="product-cart__quantity">15 відгуків</a>
+                                                   </div>
+                                                   <div class="status green">У наявності</div>
+                                                </div>
+                                             </div>
+                                             <a href="#" class="product-cart__title">132F0001 Перетворювач частоти Danfoss VLT
+                                                Micro Drive FC-51</a>
+                                          </div>
+                                          <div class="product-cart__main">
+                                             <div class="product-cart__line">
+                                                <span>Серія</span>
+                                                <span>Фронтальний</span>
+                                             </div>
+                                             <div class="product-cart__line">
+                                                <span>Напруга на вході, В</span>
+                                                <span>230</span>
+                                             </div>
+                                             <div class="product-cart__line">
+                                                <span>Макс. робочий струм, А</span>
+                                                <span>1.2</span>
+                                             </div>
+                                          </div>
+                                          <div class="product-cart__footer">
+                                             <div class="product-cart__price d-flex">
+                                                <div class="product-cart__old-price">5 677,50 ₴</div>
+                                                <span>5 588,50 ₴</span>
+                                             </div>
+                                             <button type="button"
+                                                class="product-cart__buy btn btn-blue btn-product _active">Купити</btn>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="comparison__pagging pagging pagging-white"></div>
+                              <div class="comparison__nav comparison__nav-right">
+                                 <button type="button" class="nav nav-next nav-green">
+                                    <svg class="nav-next-icon" width="12" height="8">
+                                       <use xlink:href="@img/icons/icons.svg#lang-arrow"></use>
+                                    </svg>
+                                 </button>
+                              </div>
+                           </div>
+                        </td>
+                     </tr>
+                  </thead>
+                  <tbody class="table-comparison__body">
+                     <th>
+                        <div class="table-comparison__label table-comparison__label_gray">Серія</div>
+                        <div class="table-comparison__label">Номінальна потужність, кВт</div>
+                        <div class="table-comparison__label table-comparison__label_gray">Напруга управління</div>
+                        <div class="table-comparison__label">Номінальний струм AC-53, А</div>
+                     </th>
+                     <td>
+                        <div class="comparison__subslider subslider-comparison swiper">
+                           <div class="subslider-comparison__wrapper swiper-wrapper">
+                              <div class="subslider-comparison__slide swiper-slide">
+                                 <div class="table-comparison__value table-comparison__value_gray">MCD 202</div>
+                                 <div class="table-comparison__value">7.5</div>
+                                 <div class="table-comparison__value table-comparison__value_gray">110/230В AC</div>
+                                 <div class="table-comparison__value">18</div>
+                              </div>
+                              <div class="subslider-comparison__slide swiper-slide">
+                                 <div class="table-comparison__value table-comparison__value_gray">DS7</div>
+                                 <div class="table-comparison__value">3</div>
+                                 <div class="table-comparison__value table-comparison__value_gray">24В AC/DC</div>
+                                 <div class="table-comparison__value">4</div>
+                              </div>
+                              <div class="subslider-comparison__slide swiper-slide">
+                                 <div class="table-comparison__value table-comparison__value_gray">MCD 500</div>
+                                 <div class="table-comparison__value">315</div>
+                                 <div class="table-comparison__value table-comparison__value_gray">110/230В AC</div>
+                                 <div class="table-comparison__value">18</div>
+                              </div>
+                              <div class="subslider-comparison__slide swiper-slide">
+                                 <div class="table-comparison__value table-comparison__value_gray">MCD 500</div>
+                                 <div class="table-comparison__value">315</div>
+                                 <div class="table-comparison__value table-comparison__value_gray">110/230В AC</div>
+                                 <div class="table-comparison__value">18</div>
+                              </div>
+                           </div>
+                        </div>
+                     </td>
+                  </tbody>
+               </table>
+            </div>
+         </section>
+         @@include('html/global/product-carousel.htm',{
+         "title":"Переглянуті товари"
+         })
+         @@include('html/global/application.htm',{})
+      </main>
+      @@include('html/footer/_footer.htm',{})
+   </div>
+   @@include('html/modals/_popup.htm',{})
+   @@include('html/javascript/_js.htm',{})
+</body>
+
+</html>

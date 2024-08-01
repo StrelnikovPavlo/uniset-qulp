@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/head/_head.htm',{
+"title":"карточка в наличии"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header/_header.htm',{})
+      <main class="home-page">
+         <nav aria-label="breadcrumb">
+            <div class="breadcrumb__container">
+               <ol class="breadcrumb">
+                  <li class="breadcrumb__item"><a href="#">Головна</a></li>
+                  <li class="breadcrumb__item"><a href="#">Привідна техніка</a></li>
+                  <li class="breadcrumb__item"><a href="#">Пристрої плавного пуску</a></li>
+                  <li class="breadcrumb__item _active" aria-current="page">Пристрій плавного пуску Eaton DS7-342SX007N0-N 3kW 230V-480V</li>
+               </ol>
+            </div>
+         </nav>
+         <div class="home-page__product product-card">
+            <div class="product-card__container">
+               <h1 class="product-card__title title-page">Пристрій плавного пуску Eaton DS7-342SX007N0-N 3kW 230V-480V</h1>
+               <div class="product-card__row">
+                  <div class="product-card__images">
+                     <div class="slider-card swiper">
+                        <button type="button" class="slider-card__nav slider-card__nav--prev"></button>
+                        <div data-gallery class="slider-card__wrapper swiper-wrapper">
+                           <a href="@img/card/01.png" class="slider-card__slide swiper-slide">
+                              <div class="slider-card__sales">
+                                 <div class="sale sale-yellow">Популярне</div>
+                              </div>
+                              <div class="slider-card__img cntr">
+                                 <img src="@img/card/01.png" alt="img">
+                              </div>
+                           </a>
+                           <a href="@img/card/01.png" class="slider-card__slide swiper-slide">
+                              <div class="slider-card__sales">
+                                 <div class="sale sale-yellow">Популярне</div>
+                              </div>
+                              <div class="slider-card__img cntr">
+                                 <img src="@img/card/01.png" alt="img">
+                              </div>
+                           </a>
+                        </div>
+                        <button type="button" class="slider-card__nav slider-card__nav--next"></button>
+                     </div>
+                     <div class="slider-card__pagging pagging pagging-white"></div>
+                     <div class="subslider-card swiper">
+                        <div class="subslider-card__wrapper swiper-wrapper">
+                           <div class="subslider-card__slide swiper-slide cntr">
+                              <img src="@img/card/02.png" alt="img">
+                           </div>
+                           <div class="subslider-card__slide swiper-slide cntr">
+                              <img src="@img/card/02.png" alt="img">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="product-card__info info-card">
+                     <div class="info-card__row">
+                        <div class="info-card__available _active">У наявності</div>
+                        <div class="info-card__article">Артикул: 134927</div>
+                     </div>
+                     <div class="info-card__row">
+                        <div class="info-card__producer">Виробник: <a href="#">Eaton</a></div>
+                        <div class="info-card__rating">
+                           <div class="info-card__stars"></div>
+                           <a href="#" class="info-card__reviews">2 відгука</a>
+                        </div>
+                     </div>
+                     <div class="info-card__block">
+                        <div class="info-card__label">Номінальний струм AC-53, А:</div>
+                        <div class="info-card__current">
+                           <div class="info-card__current-selected">
+                              <span>4</span>
+                              <svg class="info-card__current-selected-icon" width="12" height="8">
+                                 <use xlink:href="@img/icons/icons.svg#lang-arrow"></use>
+                              </svg>
+                           </div>
+                           <div class="info-card__dropdown">
+                              <a href="#">1</a>
+                              <a href="#">2</a>
+                              <a href="#">3</a>
+                              <a href="#">5</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="info-card__block">
+                        <div class="info-card__label">Номінальна потужність, кВт:</div>
+                        <div class="info-card__power">
+                           <a href="#" class="info-card__power_item _active">1.5</a>
+                           <a href="#" class="info-card__power_item">4</a>
+                           <div class="info-card__power_item _disabled">5.5</div>
+                           <a href="#" class="info-card__power_item">7.5</a>
+                           <a href="#" class="info-card__power_item">11</a>
+                           <a href="#" class="info-card__power_item">15</a>
+                           <a href="#" class="info-card__power_item">22</a>
+                           <a href="#" class="info-card__power_item">30</a>
+                           <a href="#" class="info-card__power_item">37</a>
+                           <a href="#" class="info-card__power_item">45</a>
+                           <a href="#" class="info-card__power_item">55</a>
+                           <a href="#" class="info-card__power_item">75</a>
+                           <a href="#" class="info-card__power_item">90</a>
+                           <a href="#" class="info-card__power_item">110</a>
+                        </div>
+                     </div>
+                     <div class="info-card__block">
+                        <div class="info-card__label">Напруга управління:</div>
+                        <div class="info-card__power">
+                           <a href="#" class="info-card__power_item">24B AC/DC</a>
+                           <a href="#" class="info-card__power_item _active">24B SmartWire-DT</a>
+                        </div>
+                     </div>
+                     <div class="info-card__quantity">
+                        <div class="info-card__label">Кількість товару:</div>
+                        <div data-quantity class="quantity">
+                           <button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+                           <div class="quantity__input">
+                              <input data-quantity-value autocomplete="off" type="text" name="quantity" value="1">
+                           </div>
+                           <button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+                        </div>
+                     </div>
+                     <div class="info-card__price">
+                        <div class="info-card__price-old">6 906,75 ₴</div>
+                        <div class="info-card__price-new">6 505,55 ₴</div>
+                        <span>ціна за 1 од.</span>
+                     </div>
+                     <div class="info-card__actions">
+                        <a href="#" class="info-card__buy btn btn-blue _active">Купити</a>
+                        <button type="button" class="info-card__buy-one-click btn btn-one-click _active">Купити в 1 клік</button>
+                        <a data-da=".info-card__price, 479" href="#" class="info-card__weight cntr _active">
+                           <svg class="scales" width="26" height="26">
+                              <use xlink:href="@img/icons/icons.svg#scales-green"></use>
+                           </svg>
+                        </a>
+                     </div>
+                     <div class="support">
+                        <div class="support__column">
+                           <div class="support__label">Залишилися питання!?</div>
+                           <p class="support__text">Зателефонуйте і наш менеджер Вам допоможе</p>
+                        </div>
+                        <a href="tel:+380733903303" class="support__call">+38 073-390-33-03</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="product-card__details details-card">
+                  <ul class="details-card__nav">
+                     <li><a data-goto="#desc" data-goto-header href="#" class="_navigator-active">Опис</a></li>
+                     <li><a data-goto="#characteristics" data-goto-header href="#">Характеристики</a></li>
+                     <li><a data-goto="#reviews" data-goto-header href="#">Відгуки</a></li>
+                     <li><a data-goto="#video" data-goto-header href="#">Відео</a></li>
+                     <li><a data-goto="#files" data-goto-header href="#">Файли</a></li>
+                  </ul>
+                  <div class="details-card__row">
+                     <div class="details-card__about">
+                        <div id="desc" class="details-card__block">
+                           <div class="details-card__caption">Опис</div>
+                           <div class="details-card__desc">
+                              <p>Пристрій плавного пуску DS7 призначений для плавного пуску та зупинки електродвигунів від 1,1 до 110 кВт з регулюванням по 2м фаз. По завершенні запуску тиристори шунтуються за допомогою вбудованих контактів. Пристрій відрізняється простим керуванням і має всього 3 налаштування – U-Start (стартова напруга у відсотках), а також t-Start (час виходу на номінальну напругу) та t-Stop (час зниження напруги до стартової відключення) в секундах. Два світлодіоди повідомляють про стан пристрою, два релейні виходи (готовність до роботи та вихід на номінальну напругу) можуть використовуватися в керуючих ланцюгах. Крім того, доступні пристрої з напругою ланцюгів управління 24, AC/DC або 110/230 В. За рахунок використання запатентованого методу асиметричного управління тиристорами двигун запускається плавно, але зберігає при цьому більш високий момент обертання, чого не дозволяють інші подібні пристрої. Основні сфери застосування - насоси, вентилятори і невеликі конвейєри. </p>
+                              <ul>
+                                 <li>Пристрій <b>плавного</b> пуску</li>
+                                 <li>Пристрій плавного пуску</li>
+                              </ul>
+                              <br>
+                              <p>Пристрій</p>
+                              <ol>
+                                 <li>Пристрій <a href="#">плавного</a> пуску</li>
+                                 <li>Пристрій <strong>плавного</strong> пуску</li>
+                              </ol>
+                           </div>
+                        </div>
+                        <div id="characteristics" class="details-card__block">
+                           <div class="details-card__caption">Характеристики</div>
+                           <div class="details-card__characteristics characteristics-card">
+                              <div class="characteristics-card__head d-flex">
+                                 <span class="characteristics-card__label">Серія</span>
+                                 <span class="characteristics-card__value">DS7</span>
+                              </div>
+                              <div class="characteristics-card__line d-flex">
+                                 <span class="characteristics-card__label">Номінальна потужність, кВт</span>
+                                 <span class="characteristics-card__value">1.5</span>
+                              </div>
+                              <div class="characteristics-card__head d-flex">
+                                 <span class="characteristics-card__label">Напруга управління</span>
+                                 <span class="characteristics-card__value">110/230В AC</span>
+                              </div>
+                              <div class="characteristics-card__line d-flex">
+                                 <span class="characteristics-card__label">Номінальний струм AC-53, А</span>
+                                 <span class="characteristics-card__value">4</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div id="reviews" class="details-card__block">
+                           <div class="details-card__caption">Відгуки</div>
+                           <div class="details-card__reviews reviews-card">
+                              <div class="reviews-card__top d-flex">
+                                 <div class="reviews-card__rating d-flex">
+                                    <div class="reviews-card__stars"></div>
+                                    <div class="reviews-card__grade">4 <span>(2 відгука)</span></div>
+                                 </div>
+                                 <button class="reviews-card__add-review btn btn-blue">Додати відгук</button>
+                              </div>
+                              <div class="reviews-card__item item-review">
+                                 <div class="item-review__info">
+                                    <div class="item-review__user">
+                                       <div class="item-review__avatar cntr">P</div>
+                                       <div class="item-review__column">
+                                          <div class="item-review__username">Роман Іванов</div>
+                                          <div class="item-review__rating"></div>
+                                       </div>
+                                    </div>
+                                    <div class="item-review__data">11.06.22</div>
+                                 </div>
+                                 <div class="item-review__content">Дуже гарний пристрій. Усе працює</div>
+                              </div>
+                              <div class="reviews-card__item item-review">
+                                 <div class="item-review__info">
+                                    <div class="item-review__user">
+                                       <div class="item-review__avatar cntr">Є</div>
+                                       <div class="item-review__column">
+                                          <div class="item-review__username">Євген Лисак</div>
+                                          <div class="item-review__rating"></div>
+                                       </div>
+                                    </div>
+                                    <div class="item-review__data">11.06.22</div>
+                                 </div>
+                                 <div class="item-review__content">Вже кілька разів замовляв різний товар у цьому магазині. Все на найвищому рівні. Якість товару – дуже хороша. Менеджери компетентні, підкажуть, якщо є якісь питання щодо товару. Ціни приємні. Рекомендую! </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div id="video" class="details-card__block">
+                           <div class="details-card__caption">Відео</div>
+                           <div data-popup="#po-video" data-popup-youtube="4NzlbkcgQqY"d class="details-card__video">
+                              <img src="@img/video.jpg" alt="video">
+                              <button type="button" class="video-play"></button>
+                           </div>
+                        </div>
+                        <div id="files" class="details-card__block">
+                           <div class="details-card__caption">Файли</div>
+                           <ul class="details-card__list">
+                              <li>
+                                 <span>Каталог 2019, Електротехнічне обладнання</span>
+                                 <a href="#">
+                                    <span>Завантажити PDF</span>
+                                    <svg class="details-card__list-icon" width="22" height="16">
+                                       <use xlink:href="@img/icons/icons.svg#arrow-green"></use>
+                                    </svg>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <aside class="product-card__aside aside-product">
+                        <div class="aside-product__top">
+                           <div class="aside-product__img cntr">
+                              <img src="@img/card/03.png" alt="img">
+                           </div>
+                        </div>
+                        <div class="aside-product__content">
+                           <a href="#" class="aside-product__title">Пристрій плавного пуску Eaton DS7-342SX007N0-N 3kW 230V-480V</a>
+                           <div class="aside-product__available">У наявності</div>
+                           <div class="aside-product__price">
+                              <div class="aside-product__price-old">6 906,75 ₴</div>
+                              <div class="aside-product__price-new">6 505,55 ₴</div>
+                           </div>
+                           <button type="button" class="aside-product__buy btn btn-blue">Купити</button>
+                        </div>
+                     </aside>
+                  </div>
+               </div>
+            </div>
+         </div>
+         @@include('html/global/product-carousel.htm',{
+            "title":"схожі товари"
+         })
+         @@include('html/global/product-carousel.htm',{
+            "title":"Переглянуті товари"
+         })
+         @@include('html/global/application.htm',{})
+      </main>
+      @@include('html/footer/_footer.htm',{})
+   </div>
+   @@include('html/modals/_popup.htm',{})
+   @@include('html/javascript/_js.htm',{})
+</body>
+
+</html>

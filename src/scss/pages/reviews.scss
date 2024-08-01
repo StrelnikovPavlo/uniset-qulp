@@ -1,0 +1,22 @@
+.reviews-page{
+   margin-bottom: 0 !important;
+}
+.reviews {
+   &__container {
+   }
+   &__title {
+   }
+   &__body {
+   }
+   &__items {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 20px;
+      @media (max-width:$tablet){
+         grid-template-columns: repeat(2,1fr);
+      }
+      @media (max-width:$mobile){
+         grid-template-columns: 1fr; 
+      }
+   }
+}

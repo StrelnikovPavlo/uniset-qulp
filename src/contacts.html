@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/head/_head.htm',{
+"title":"контакти"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header/_header.htm',{})
+      <main class="home-page">
+         <nav aria-label="breadcrumb">
+            <div class="breadcrumb__container">
+               <ol class="breadcrumb">
+                  <li class="breadcrumb__item"><a href="#">Головна</a></li>
+                  <li class="breadcrumb__item _active" aria-current="page">Контакти</li>
+               </ol>
+            </div>
+         </nav>
+         <div class="home-page__contacts contacts-page">
+            <div class="contacts-page__container">
+               <h1 class="contacts-page__title title-page">контакти</h1>
+               <div class="contacts-page__body">
+                  <div class="contact-info">
+                     <div class="contact-info__details">
+                        <div class="contact-info__name">ООО "Юнісет"</div>
+                        <div class="contact-info__block">
+                           <div class="contact-info__label">Центральний офіс</div>
+                           <div class="contact-info__address loc">
+                              <svg class="contact-info__address-icon" width="14" height="20">
+                                 <use xlink:href="@img/icons/icons.svg#location"></use>
+                              </svg>
+                              <span>Україна, м. Біла Церква, вул. Леваневського, 58, оф. 170</span>
+                           </div>
+                        </div>
+                        <div class="contact-info__block">
+                           <div class="contact-info__label">Адреса для кореспонденції</div>
+                           <div class="contact-info__address">09108, м Біла Церква, а/с 73, ТОВ "Юнисет"</div>
+                        </div>
+                        <div class="contact-info__phone">
+                           <a href="tel:0443903303">
+                              <svg class="contact-info__phone-icon" width="16" height="16">
+                                 <use xlink:href="@img/icons/icons.svg#phone-blue"></use>
+                              </svg>
+                              <span>044-390-33-03</span>
+                           </a>
+                           <span>багатоканальний</span>
+                        </div>
+                        <div class="contact-info__phone">
+                           <a href="tel:0733903303">
+                              <svg class="contact-info__phone-icon" width="16" height="16">
+                                 <use xlink:href="@img/icons/icons.svg#phone-blue"></use>
+                              </svg>
+                              <span>073-390-33-03</span>
+                           </a>
+                           <span>мобільний</span>
+                        </div>
+                        <div class="contact-info__phone">
+                           <a href="tel:0443903303">
+                              <svg class="contact-info__phone-icon" width="16" height="16">
+                                 <use xlink:href="@img/icons/icons.svg#phone-blue"></use>
+                              </svg>
+                              <span>068-390-33-03</span>
+                           </a>
+                           <span>мобільний</span>
+                        </div>
+                        <a href="mailto:order@uniset.ua" class="contact-info__email">
+                           <svg class="contact-info__email-icon" width="17" height="13">
+                              <use xlink:href="@img/icons/icons.svg#email"></use>
+                           </svg>
+                           <span>order@uniset.ua</span>
+                        </a>
+                     </div>
+                     <div class="contact-info__map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2576.108435286693!2d30.163919676572355!3d49.78402573512347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d369f2357f5391%3A0x7262ffab0de2afd5!2sVulytsya%20Levanevs%CA%B9koho%2C%2058%2C%20170%2C%20Bila%20Tserkva%2C%20Kyivs&#39;ka%20oblast%2C%20Ukraina%2C%2009100!5e0!3m2!1spl!2spl!4v1699573975629!5m2!1spl!2spl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     </div>
+                  </div>
+                  <div class="department-contacts">
+                     <div class="department-contacts__column">
+                        <div class="department-contacts__label">Відділ привідної техніки</div>
+                        <div class="department-contacts__about">Двигуни, редуктори, перетворювачі частоти, пристрої плавного пуску</div>
+                        <div class="department-contacts__person">
+                           <div class="department-contacts__name">Фещенко Олег</div>
+                           <div class="department-contacts__phone">
+                              <div class="department-contacts__call">
+                                 <a href="tel:0443903303">
+                                    <svg class="department-contacts__call-icon" width="16" height="16">
+                                       <use xlink:href="@img/icons/icons.svg#phone-blue"></use>
+                                    </svg>
+                                    <span>044-390-33-03</span>
+                                 </a>
+                                 <span>багатоканальний</span>
+                              </div>
+                              <span>(вн. номер 902)</span>
+                           </div>
+                           <div class="department-contacts__phone">
+                              <div class="department-contacts__call">
+                                 <a href="tel:0673903301">
+                                    <svg class="department-contacts__call-icon" width="16" height="16">
+                                       <use xlink:href="@img/icons/icons.svg#phone-blue"></use>
+                                    </svg>
+                                    <span>067-390-33-01</span>
+                                 </a>
+                                 <span>мобільний</span>
+                              </div>
+                           </div>
+                           <a href="mailto:of@uniset.ua" class="department-contacts__mail">
+                              <svg class="department-contacts__mail-icon" width="17" height="13">
+                                 <use xlink:href="@img/icons/icons.svg#email"></use>
+                              </svg>
+                              <span>of@uniset.ua</span>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="department-contacts__column">
+                        <div class="department-contacts__label">Відділ електротехнічного обладніння</div>
+                        <div class="department-contacts__about">Електрощитове обладнання, прилади КВПіА, автоматика</div>
+                        <div class="department-contacts__person">
+                           <div class="department-contacts__name">Стоцький Юрій</div>
+                           <div class="department-contacts__phone">
+                              <div class="department-contacts__call">
+                                 <a href="tel:0443903303">
+                                    <svg class="department-contacts__call-icon" width="16" height="16">
+                                       <use xlink:href="@img/icons/icons.svg#phone-blue"></use>
+                                    </svg>
+                                   <span> 044-390-33-03</span>
+                                 </a>
+                                 <span>багатоканальний</span>
+                              </div>
+                              <span>(вн. номер 902)</span>
+                           </div>
+                           <div class="department-contacts__phone">
+                              <div class="department-contacts__call">
+                                 <a href="tel:0733903303">
+                                    <svg class="department-contacts__call-icon" width="16" height="16">
+                                       <use xlink:href="@img/icons/icons.svg#phone-blue"></use>
+                                    </svg>
+                                    <span>073-390-33-03</span>
+                                 </a>
+                                 <span>мобільний</span>
+                              </div>
+                           </div>
+                           <a href="mailto:ys@uniset.ua" class="department-contacts__mail">
+                              <svg class="department-contacts__mail-icon" width="17" height="13">
+                                 <use xlink:href="@img/icons/icons.svg#email"></use>
+                              </svg>
+                              <span>ys@uniset.uaa</span>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="department-contacts__column">
+                        <div class="department-contacts__label">Регіональный офіс м. Дніпро</div>
+                        <div class="department-contacts__person">
+                           <div class="department-contacts__name">Юрасов Євген</div>
+                           <div class="department-contacts__phone">
+                              <div class="department-contacts__call">
+                                 <a href="tel:0673411500">
+                                    <svg class="department-contacts__call-icon" width="16" height="16">
+                                       <use xlink:href="@img/icons/icons.svg#phone-blue"></use>
+                                    </svg>
+                                    <span>067-341-15-00</span>
+                                 </a>
+                                 <span>мобільний</span>
+                              </div>
+                           </div>
+                           <a href="mailto:dnipro@uniset.ua" class="department-contacts__mail">
+                              <svg class="department-contacts__mail-icon" width="17" height="13">
+                                 <use xlink:href="@img/icons/icons.svg#email"></use>
+                              </svg>
+                              <span>dnipro@uniset.ua</span>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="department-contacts__column">
+                        <div class="department-contacts__label">Технічний відділ</div>
+                        <div class="department-contacts__person">
+                           <div class="department-contacts__name">Михайлов Роман</div>
+                           <div class="department-contacts__phone">
+                              <div class="department-contacts__call">
+                                 <a href="tel:0443903303">
+                                    <svg class="department-contacts__call-icon" width="16" height="16">
+                                       <use xlink:href="@img/icons/icons.svg#phone-blue"></use>
+                                    </svg>
+                                    <span>044-390-33-03</span>
+                                 </a>
+                                 <span>багатоканальний</span>
+                              </div>
+                              <span>(вн. номер 902)</span>
+                           </div>
+                           <a href="mailto:rm@uniset.ua" class="department-contacts__mail">
+                              <svg class="department-contacts__mail-icon" width="17" height="13">
+                                 <use xlink:href="@img/icons/icons.svg#email"></use>
+                              </svg>
+                              <span>rm@uniset.ua</span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      @@include('html/footer/_footer.htm',{})
+   </div>
+   @@include('html/javascript/_js.htm',{})
+</body>
+
+</html>

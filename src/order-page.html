@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/head/_head.htm',{
+"title":"ОФОРМИТИ ЗАМОВЛЕННЯ"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header/_header.htm',{})
+      <main class="order-page">
+         <nav aria-label="breadcrumb">
+            <div class="breadcrumb__container">
+               <ol class="breadcrumb">
+                  <li class="breadcrumb__item"><a href="#">Головна</a></li>
+                  <li class="breadcrumb__item"><a href="#">Кошик</a></li>
+                  <li class="breadcrumb__item _active" aria-current="page">Оформити замовлення</li>
+               </ol>
+            </div>
+         </nav>
+         <section class="order-page__to-order to-order">
+            <div class="to-order__container">
+               <div class="to-order__top d-flex">
+                  <h1 class="to-order__title title-page">оформити замовлення</h1>
+                  <a href="#" class="to-order__continue-shopping d-flex">
+                     <svg class="to-order__continue-shopping-icon" width="25" height="20">
+                        <use xlink:href="@img/icons/icons.svg#arrow-green"></use>
+                     </svg>
+                     <span>Продовжити покупки</span>
+                  </a>
+               </div>
+               <form action="#" class="to-order__body">
+                  <div class="to-order__form form-order">
+                     <div class="form-order__block">
+                        <div class="form-order__title">Ваші контактні дані</div>
+                        <div class="form-order__body">
+                           <div class="form-order__row">
+                              <div class="form-order__item">
+                                 <label for="customer_lastname" class="form-order__label">Прізвище</label>
+                                 <input data-required id="customer_lastname" autocomplete="off" type="text" name="customer_lastname" data-error="Заповніть поле" class="input">
+                              </div>
+                              <div class="form-order__item">
+                                 <label for="customer_firstname" class="form-order__label">Ім’я</label>
+                                 <input data-required id="customer_firstname" autocomplete="off" type="text" name="customer_firstname" data-error="Заповніть поле" class="input">
+                              </div>
+                              <div class="form-order__item">
+                                 <label for="customer_phone" class="form-order__label">Телефон<span>*</span></label>
+                                 <input data-required id="customer_phone" autocomplete="off" type="tel" name="customer_phone" data-error="Заповніть поле" class="input">
+                              </div>
+                              <div class="form-order__item">
+                                 <label for="customer_email" class="form-order__label">Електронна пошта</label>
+                                 <input data-required id="customer_email" autocomplete="off" type="text" name="customer_email" data-error="Заповніть поле" class="input">
+                              </div>
+                           </div>
+                           <div class="checkbox">
+                              <input id="shipping_address" class="checkbox__input" type="checkbox" value="1" name="any_person_receive">
+                              <label for="shipping_address" class="checkbox__label"><span class="checkbox__text">Отримувати буде інша людина</span></label>
+                           </div>
+                           <div class="form-order__row">
+                              <div class="form-order__item">
+                                 <label for="customer_phone_recipient" class="form-order__label">Номер отримувача</label>
+                                 <input id="customer_phone_recipient" autocomplete="off" type="tel" name="customer_phone_recipient" data-error="Заповніть поле" class="input">
+                              </div>
+                              <div class="form-order__item">
+                                 <label for="customer_lastname_recipient" class="form-order__label">Прізвище</label>
+                                 <input id="customer_lastname_recipient" autocomplete="off" type="text" name="customer_lastname_recipient" data-error="Заповніть поле" class="input">
+                              </div>
+                              <div class="form-order__item">
+                                 <label for="customer_firstname_recipient" class="form-order__label">Ім’я</label>
+                                 <input id="customer_firstname_recipient" autocomplete="off" type="text" name="customer_firstname_recipient" data-error="Заповніть поле" class="input">
+                              </div>
+                              <div class="form-order__item">
+                                 <label for="customer_surname_recipient" class="form-order__label">По батькові</label>
+                                 <input id="customer_surname_recipient" autocomplete="off" type="text" name="customer_surname_recipient" data-error="Заповніть поле" class="input">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-order__block">
+                        <div class="form-order__title">Спосіб доставки</div>
+                        <div class="form-order__body">
+                           <div class="form-order__row">
+                              <div class="options">
+                                 <div class="options__item">
+                                    <input id="new_post" class="options__input" checked type="radio" value="1" name="delivery_option">
+                                    <label for="new_post" class="options__label"><span class="options__text">У відділення Нової Пошти</span></label>
+                                 </div>
+                              </div>
+                              <div class="form-order__item full-width">
+                                 <label for="customer_city" class="form-order__label">Ваше місто</label>
+                                 <input id="customer_city" autocomplete="off" type="text" name="customer_city" data-error="Заповніть поле" class="input">
+                              </div>
+                              <div class="form-order__item full-width">
+                                 <select class="select-department" name="state">
+                                    <option value="AL">Alabama</option>
+                                    <option value="WY">Wyoming</option>
+                                  </select>
+                              </div>
+                           </div>
+                           <div class="form-order__row">
+                              <div class="options">
+                                 <div class="options__item">
+                                    <input id="pickup" class="options__input" checked type="radio" value="1" name="delivery_option">
+                                    <label for="pickup" class="options__label"><span class="options__text">Самовивіз м. Біла Церква,вул. Леваневського, 58, оф.170</span></label>
+                                 </div>
+                                 <div class="options__item">
+                                    <input id="address_delivery" class="options__input" checked type="radio" value="1" name="delivery_option">
+                                    <label for="address_delivery" class="options__label"><span class="options__text">Адресна доставка (Нова Пошта)</span></label>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-order__block">
+                        <div class="form-order__title">Спосіб оплати</div>
+                        <div class="form-order__body">
+                           <div class="form-order__row">
+                              <div class="options">
+                                 <div class="options__item">
+                                    <input id="current_account" class="options__input" checked type="radio" value="1" name="payment_option">
+                                    <label for="current_account" class="options__label"><span class="options__text">Оплата на розрахунковий рахунок (з ПДВ)</span></label>
+                                 </div>
+                              </div>
+                              <div class="form-order__item">
+                                 <label for="customer_kod" class="form-order__label">Код ЕГРПОУ</label>
+                                 <input id="customer_kod" autocomplete="off" type="text" name="customer_kod" data-error="Заповніть поле" class="input">
+                              </div>
+                              <div class="form-order__item">
+                                 <label for="customer_fullname" class="form-order__label">Повна назва юридичної особи</label>
+                                 <input id="customer_fullname" autocomplete="off" type="text" name="customer_fullname" data-error="Заповніть поле" class="input">
+                              </div>
+                           </div>
+                           <div class="form-order__row">
+                              <div class="options">
+                                 <div class="options__item">
+                                    <input id="payment_made" class="options__input" checked type="radio" value="1" name="payment_option">
+                                    <label for="payment_made" class="options__label"><span class="options__text">Накладений платіж</span></label>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="to-order__bascet bascet-order">
+                     <div class="bascet-order__title">Ваше замовлення</div>
+                     <div class="bascet-order__body">
+                        <div class="bascet-order__products">
+                           <div class="product-bascet">
+                              <div class="product-bascet__info">
+                                 <div class="product-bascet__img">
+                                    <img src="@img/order-page/1.png" alt="img">
+                                 </div>
+                                 <div class="product-bascet__column">
+                                    <a href="#" class="product-bascet__title">Пристрій плавного пуску VLT Soft Starter MCD 600</a>
+                                    <div class="product-bascet__article">Артикул: 136G8759</div>
+                                 </div>
+                              </div>
+                              <div class="product-bascet__actions">
+                                 <div class="product-bascet__price">
+                                    <div class="product-bascet__price-old">61 423,33 ₴</div>
+                                    <span>60 823,33 ₴</span>
+                                 </div>
+                                 <div data-quantity class="quantity">
+                                    <button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+                                    <div class="quantity__input">
+                                       <input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+                                    </div>
+                                    <button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+                                 </div>
+                                 <button type="button" class="product-bascet__delete">
+                                    <svg class="product-bascet__delete-icon" width="14" height="14">
+                                       <use xlink:href="@img/icons/icons.svg#delete"></use>
+                                    </svg>
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="product-bascet">
+                              <div class="product-bascet__info">
+                                 <div class="product-bascet__img">
+                                    <img src="@img/order-page/2.png" alt="img">
+                                 </div>
+                                 <div class="product-bascet__column">
+                                    <a href="#" class="product-bascet__title">Автоматичний вимикач Eaton PL6-B4/1 1Р 4А</a>
+                                    <div class="product-bascet__article">Артикул: 286517</div>
+                                 </div>
+                              </div>
+                              <div class="product-bascet__actions">
+                                 <div class="product-bascet__price">
+                                    <span>277,13 ₴</span>
+                                 </div>
+                                 <div data-quantity class="quantity">
+                                    <button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+                                    <div class="quantity__input">
+                                       <input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+                                    </div>
+                                    <button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+                                 </div>
+                                 <button type="button" class="product-bascet__delete">
+                                    <svg class="product-bascet__delete-icon" width="14" height="14">
+                                       <use xlink:href="@img/icons/icons.svg#delete"></use>
+                                    </svg>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="bascet-order__result d-flex">
+                           <div class="bascet-order__label">Вартість доставки:</div>
+                           <div class="bascet-order__value">По тарифу перевізника</div>
+                        </div>
+                        <div class="bascet-order__result d-flex">
+                           <div class="bascet-order__label">3 товари на сумму:</div>
+                           <div class="bascet-order__price">
+                              <div class="bascet-order__price-old">71 700,46 ₴ </div>
+                              <span>61 100,46 ₴</span>
+                           </div>
+                        </div>
+                        <button type="submit" class="bascet-order__submit btn btn-blue">Оформити замовлення</button>
+                        <p class="bascet-order__text">Підтверджуючи замовлення, я приймаю умови Обробка своїх персональних даних, <a href="#">Договір публічної оферти</a></p>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </section>
+      </main>
+      @@include('html/footer/_footer.htm',{})
+   </div>
+   @@include('html/javascript/_js.htm',{})
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/head/_head.htm',{
+"title":"умова згоди"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header/_header.htm',{})
+      <main class="home-page">
+         <nav aria-label="breadcrumb">
+            <div class="breadcrumb__container">
+               <ol class="breadcrumb">
+                  <li class="breadcrumb__item"><a href="#">Головна</a></li>
+                  <li class="breadcrumb__item _active" aria-current="page">Оплата і доставка</li>
+               </ol>
+            </div>
+         </nav>
+         <div class="home-page__consent consent-page">
+            <div class="consent-page__container">
+               <h1 class="consent-page__title title-page">Оплата і доставка</h1>
+               <div class="consent-page__body">
+                  <div class="consent-page__section">
+                     <p>Ми доставляємо продукцію в усі регіони України. Вартість доставки залежить від габаритів, ваги вироби і відстані від виробництва або складу до місця призначення, згідно з тарифами перевізника. Також можливий самовивіз.</p>
+                     <div class="consent-page__caption">Способи оплати</div>
+                     <p>Оплата може здійснюватися наступними методами:</p>
+                     <ul class="consent-page__list">
+                        <li>банківським переказом з цього приводу компанії (як юридичних, так фізичних осіб);</li>
+                        <li>безпосередньо в нашому офісі</li>
+                        <li>післяоплатою (нова пошта)</li>
+                     </ul>
+                     <p>Доставка проводитися протягом 7 робочих днів, за умови наявності товару на складі, при відсутності товару на складі терміни доставки обговорюються індивідуально.</p>
+                  </div>
+                  <div class="consent-page__section">
+                     <div class="consent-page__caption">Важливо знати!</div>
+                     <p>Після оформлення замовлення наші менеджери зв'яжуться з вами і погодять всі терміни і деталі замовлення.</p>
+                     <p>Організаційні питання щодо завантаження устаткування перед відправленням з нашого складу ТОВ Юнісет бере на себе в заздалегідь оговоренные сроки с нашими менеджерами по телефону.</p>
+                     <p>Доставка обладнання можлива тільки після підтвердження нашим менеджером замовлення по телефону і надходження передоплати.</p>
+                     <p>Доставка здійснюватися такими транспортними компаніями: Делівері, Нова Пота, Ін Тайм.</p>
+                     <p>Також можливий самовивіз товару.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         @@include('html/global/application.htm',{})
+      </main>
+      @@include('html/footer/_footer.htm',{})
+   </div>
+   @@include('html/javascript/_js.htm',{})
+</body>
+
+</html>

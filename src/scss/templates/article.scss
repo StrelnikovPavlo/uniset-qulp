@@ -1,0 +1,72 @@
+.article {
+   background-color: #fff;
+   box-shadow: 0px 0px 25px 0px rgba(150, 150, 150, 0.30);
+   &__img {
+      position: relative;
+      width: 100%;
+      padding-bottom: 78%;
+      display: block;
+      overflow: hidden;
+      img{
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+         transition: all 0.3s ease 0s;
+      }
+      &::after{
+         content:'';
+         background: linear-gradient(5deg, #282828 3.77%, rgba(27, 27, 27, 0.00) 69.37%);
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+      }
+      @media (any-hover: hover){
+         &:hover{
+            img{
+               transform: scale(1.1);
+            }
+         }
+      }
+   }
+   &__title {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      z-index: 2;
+
+      max-height: 4em;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+   }
+   &__content {
+      padding: 15px 20px 20px 20px;
+   }
+   &__text {
+      margin-bottom: 20px;
+      line-height: math.div(17 , 16);
+      max-height: 4.3em;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+   }
+   &__more {
+      @media (any-hover: hover){
+         &:hover{
+            text-decoration: underline;
+         }
+      }
+   }
+}

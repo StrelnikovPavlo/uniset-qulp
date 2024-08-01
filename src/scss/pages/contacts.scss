@@ -1,0 +1,193 @@
+.home-page {
+   &__contacts {
+   }
+}
+.contacts-page {
+   &__container {
+   }
+   &__title {
+   }
+   &__body {
+   }
+}
+.contact-info {
+   display: grid;
+   grid-template-columns: 403px auto;
+   margin-bottom: 30px;
+   @media (max-width:$tablet){
+      grid-template-columns: 350px auto;
+   }
+   @media (max-width:$mobile){
+      grid-template-columns: 1fr; 
+      margin-bottom: 80px;
+   }
+   &__details {
+      @include adaptiveValue("padding", 30, 20);
+      background-color: $blueColor;
+      color: #fff;
+   }
+   &__name {
+      @include adaptiveValue("font-size", 25, 18);
+      font-weight: 700;
+      margin-bottom: 15px;
+   }
+   &__block {
+      margin-bottom: 15px;
+   }
+   &__label {
+      @include adaptiveValue("font-size", 20, 16);
+      font-weight: 700;
+      margin-bottom: 5px;
+   }
+   &__address {
+      line-height: math.div(18 , 16);
+      &.loc{
+         display: grid;
+         grid-template-columns: 24px auto;
+         column-gap: 5px;
+         align-items: center;
+         
+      }
+      &-icon{
+         fill: #fff;
+      }
+   }
+   &__phone {
+      max-width: max-content;
+      text-align: right;
+      margin-bottom: 5px;
+      a{
+         display: grid;
+         align-items: center;
+         grid-template-columns: 24px auto;
+         column-gap: 5px;
+         font-weight: 700;
+         @media (any-hover: hover){
+            &:hover{
+               text-decoration: underline;
+            }
+         }
+      }
+      &-icon{
+         fill: #fff;
+      }
+      span{
+         font-size: 14px;
+         display: block;
+         margin-top: 3px;
+      }
+   }
+   &__email {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 24px auto;
+      column-gap: 5px;
+      margin-top: 10px;
+      @media (any-hover: hover){
+         &:hover{
+            text-decoration: underline;
+         }
+      }
+      &-icon{
+         fill: #fff;
+      }
+   }
+   &__map{
+      iframe{
+         width: 100%;
+         height: 100%;
+         @media (max-width:$mobile){
+            height: 400px; 
+         }
+      }
+   }
+}
+.department-contacts {
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   align-items: start;
+   @include adaptiveValue("column-gap", 60, 0);
+   row-gap: 25px;
+   @media (max-width:1200px){
+      grid-template-columns: repeat(3,1fr); 
+   }
+   @media (max-width:$tablet){
+      grid-template-columns: repeat(2,1fr);
+   }
+   @media (max-width:550px){
+      grid-template-columns: 1fr;
+   }
+   &__column {
+      @include adaptiveValue("font-size", 16, 14);
+      max-width: 285px;
+   }
+   &__label {
+      font-weight: 700;
+      margin-bottom: 5px;
+   }
+   &__about {
+      line-height: math.div(18 , 16);
+      margin-bottom: 10px;
+   }
+   &__person {
+      width: 100%;
+   }
+   &__name {
+      margin-bottom: 5px;
+   }
+   &__phone {
+      display: flex;
+      align-items: start;
+      column-gap: 7px;
+      margin-bottom: 5px;
+      > span{
+         text-align: right;
+         margin-top: 3px;
+         color: $greenColor;
+      }
+   }
+   &__call {
+      text-align: right;
+      max-width: max-content;
+      a{
+         display: grid;
+         align-items: center;
+         grid-template-columns: 24px auto;
+         column-gap: 5px;
+         white-space: nowrap;
+         span{
+            color: $mainColor;
+         }
+         @media (any-hover: hover){
+            &:hover{
+               text-decoration: underline;
+            }
+         }
+      }
+      &-icon{
+         fill: $blueColor;
+      }
+      span{
+         display: block;
+         color: $grayColor;
+         @include adaptiveValue("font-size", 14, 12);
+         margin-top: 3px;
+      }
+   }
+   &__mail {
+      margin-top: 10px;
+      display: grid;
+      align-items: center;
+      grid-template-columns: 24px auto;
+      column-gap: 5px;
+      &-icon{
+         fill: $blueColor;
+      }
+      @media (any-hover: hover){
+         &:hover{
+            text-decoration: underline;
+         }
+      }
+   }
+}
+

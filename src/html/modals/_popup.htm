@@ -1,0 +1,186 @@
+<!-- < Купити в 1 клік >==================================================================================== -->
+<div id="buy-one-click" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<form action="#" class="popup__content content-body">
+			<button data-close type="button" class="popup__close">
+				<svg class="popup__close-icon" width="14" height="14">
+					<use xlink:href="@img/icons/icons.svg#close"></use>
+				</svg>
+			</button>
+			<div class="content-body__overlay">
+				<div class="popup__title">Купити в 1 клік</div>
+				<div class="popup__subtitle">Заповніть форму та наш менеджер вам зателефонує</div>
+				<div class="popup__column popup__column_smal">
+					<div class="popup__input">
+						<input type="text" name="username" data-error="Помилка" placeholder="Ваше ім’я" class="input">
+					</div>
+					<div class="popup__input">
+						<input type="tel" name="userphone" data-error="Помилка" class="input">
+					</div>
+					<button type="submit" class="popup__submit btn btn-blue">Оформити замовлення</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+<!-- < дякуємо! > ==================================================================================== -->
+<div id="thanks" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content content-body">
+			<button data-close type="button" class="popup__close">
+				<svg class="popup__close-icon" width="14" height="14">
+					<use xlink:href="@img/icons/icons.svg#close"></use>
+				</svg>
+			</button>
+			<div class="content-body__overlay">
+				<svg class="popup__icon" width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M7.06748e-05 47.955C0.0450707 21.435 21.5251 -0.0299686 48.0301 3.14082e-05C74.5651 0.0300314 96.0751 21.585 96.0001 48.09C95.9251 74.61 74.4151 96.06 47.9401 96C21.4051 95.94 -0.0449293 74.445 7.06748e-05 47.955ZM48.0301 90.375C71.4001 90.345 90.4201 71.295 90.3751 47.955C90.3151 24.6 71.3551 5.64003 48.0151 5.64003C24.6601 5.62503 5.62507 24.66 5.64007 48.015C5.64007 71.37 24.6901 90.39 48.0301 90.375Z" fill="#50A055"/>
+					<path d="M42.2101 57.4655C43.3801 56.2505 44.5051 55.0505 45.6751 53.8955C52.5451 47.0105 59.4151 40.1405 66.3001 33.2705C66.5851 32.9855 66.8551 32.7005 67.1701 32.4455C68.2951 31.5155 69.9151 31.5905 70.9201 32.6105C71.9251 33.6005 72.0301 35.1605 71.1751 36.3005C71.0101 36.5255 70.8151 36.7205 70.6201 36.9155C61.9051 45.6305 53.2051 54.3455 44.4901 63.0455C44.2651 63.2705 44.0251 63.5105 43.7701 63.6905C42.5851 64.5455 41.1301 64.3805 39.9751 63.2255C37.6501 60.9155 35.3401 58.6055 33.0301 56.2805C30.4651 53.7155 27.9001 51.1505 25.3351 48.6005C24.4951 47.7605 24.0601 46.8155 24.3751 45.6155C24.9451 43.4855 27.4951 42.8555 29.1601 44.4455C30.4801 45.7055 31.7401 47.0255 33.0301 48.3155C35.8801 51.1655 38.7151 54.0005 41.5651 56.8505C41.7151 57.0305 41.9101 57.1805 42.2101 57.4655Z" fill="#50A055"/>
+				</svg>
+				<div class="popup__title">дякуємо!</div>
+				<div class="popup__subtitle">Ми отримали вашу заявку та скоро зв'яжемося з вами</div>
+				<div class="popup__column popup__column_smal">
+					<button type="submit" class="popup__submit btn btn-blue">Добре</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- < помилка > ==================================================================================== -->
+<div id="error" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content content-body">
+			<button data-close type="button" class="popup__close">
+				<svg class="popup__close-icon" width="14" height="14">
+					<use xlink:href="@img/icons/icons.svg#close"></use>
+				</svg>
+			</button>
+			<div class="content-body__overlay">
+				<svg class="popup__title" width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M7.06748e-05 47.955C0.0450707 21.435 21.5251 -0.0299686 48.0301 3.14082e-05C74.5651 0.0300314 96.0751 21.585 96.0001 48.09C95.9251 74.61 74.4151 96.06 47.9401 96C21.4051 95.94 -0.0449293 74.445 7.06748e-05 47.955ZM48.0301 90.375C71.4001 90.345 90.4201 71.295 90.3751 47.955C90.3151 24.6 71.3551 5.64003 48.0151 5.64003C24.6601 5.62503 5.62507 24.66 5.64007 48.015C5.64007 71.37 24.6901 90.39 48.0301 90.375Z" fill="#F84147"/>
+					<path d="M45.4686 53.9484C45.4897 55.3301 46.6182 56.4375 47.9998 56.4375C49.3815 56.4375 50.51 55.3195 50.5311 53.9484L51.3748 31.2094C51.4276 30.3445 51.1111 29.5008 50.4994 28.8469C49.8455 28.1508 48.9385 27.75 47.9998 27.75C47.0611 27.75 46.1541 28.1508 45.5002 28.8469C44.8885 29.5008 44.5721 30.3445 44.6248 31.2094L45.4686 53.9484Z" fill="#F84147"/>
+					<path d="M48 68.25C49.864 68.25 51.375 66.739 51.375 64.875C51.375 63.011 49.864 61.5 48 61.5C46.136 61.5 44.625 63.011 44.625 64.875C44.625 66.739 46.136 68.25 48 68.25Z" fill="#F84147"/>
+				</svg>
+				<div class="popup__title">помилка</div>
+				<div class="popup__subtitle">Щось пішло не так, перевірте правильність введеної інформації</div>
+				<div class="popup__column popup__column_smal">
+					<button type="submit" class="popup__submit btn btn-blue">Добре</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- < товар у кошику > ==================================================================================== -->
+<div id="product-in-basket" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content content-body content-body_width">
+			<button data-close type="button" class="popup__close">
+				<svg class="popup__close-icon" width="14" height="14">
+					<use xlink:href="@img/icons/icons.svg#close"></use>
+				</svg>
+			</button>
+			<div class="content-body__overlay">
+				<div class="popup__title">товар у кошику</div>
+				<div class="popup__subtitle">Ваш товар успішно додано до кошика</div>
+				<div class="popup__column">
+					<div class="content-body__row">
+						<div class="content-body__product product-popup">
+							<div class="product-popup__info">
+								<div class="product-popup__img">
+									<img src="@img/order-page/2.png" alt="img">
+								</div>
+								<div class="product-popup__column">
+									<a href="#" class="product-popup__title">Пристрій плавного пуску VLT Soft Starter MCD 600</a>
+									<span class="product-popup__article">Артикул: 136G8759</span>
+								</div>
+							</div>
+							<div class="product-popup__action">
+								<div data-quantity class="quantity">
+									<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+									<div class="quantity__input">
+										<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+									</div>
+									<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+								</div>
+								<div class="product-popup__price">60 823,33 ₴</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-body__action">
+						<a href="#" class="content-body__order btn btn-blue">Оформити замовлення</a>
+						<a href="#" class="content-body__continue btn">Продовжити покупки</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- < Залишити відгук > ==================================================================================== -->
+<div id="leave-review" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content content-body">
+			<button data-close type="button" class="popup__close">
+				<svg class="popup__close-icon" width="14" height="14">
+					<use xlink:href="@img/icons/icons.svg#close"></use>
+				</svg>
+			</button>
+			<div class="content-body__overlay">
+				<div class="popup__title">Залишити відгук</div>
+				<div class="popup__column popup__column_big review-content">
+					<div class="review-content__input">
+						<label for="" class="review-content__label">Ваше ім’я*</label>
+						<input type="text" name="username" data-error="Помилка" class="input">
+					</div>
+					<div class="review-content__input">
+						<label for="" class="review-content__label">Відгук*</label>
+						<textarea name="review" placeholder="Напишіть, що думаєте про товар..."></textarea>
+					</div>
+					<div class="rating">
+						<div class="rating__label">Оцініть товар</div>
+						<div class="rating__row">
+							<input type="radio" id="star5" name="rating" value="5">
+							<label for="star5">
+							<svg id="star-gray" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.04894 0.92705C7.3483 0.00573921 8.6517 0.00573969 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58778 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" fill="#ECECEC"/>
+							</svg>
+							</label>
+							<input type="radio" id="star4" name="rating" value="4">
+							<label for="star4">
+							<svg id="star-gray" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.04894 0.92705C7.3483 0.00573921 8.6517 0.00573969 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58778 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" fill="#ECECEC"/>
+							</svg>
+							</label>
+							<input type="radio" id="star3" name="rating" value="4">
+							<label for="star3">
+							<svg id="star-gray" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.04894 0.92705C7.3483 0.00573921 8.6517 0.00573969 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58778 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" fill="#ECECEC"/>
+							</svg>
+							</label>
+							<input type="radio" id="star2" name="rating" value="4">
+							<label for="star2">
+							<svg id="star-gray" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.04894 0.92705C7.3483 0.00573921 8.6517 0.00573969 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58778 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" fill="#ECECEC"/>
+							</svg>
+							</label>
+							<input type="radio" id="star1" name="rating" value="4">
+							<label for="star1">
+							<svg id="star-gray" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.04894 0.92705C7.3483 0.00573921 8.6517 0.00573969 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58778 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" fill="#ECECEC"/>
+							</svg>
+							</label>
+					 	</div>
+					</div>
+					<button type="submit" class="review-content__submit btn btn-blue">Оформити замовлення</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- < Відео > ==================================================================================== -->
+<div id="po-video" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__text"></div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,145 @@
+//====================================================================================================
+.footer {
+   @include adaptiveValue("padding-top", 50, 40);
+   @include adaptiveValue("padding-bottom", 50, 40);
+   border-top: 1px solid #ECECEC;
+   &__container {
+      @media (min-width:$tablet){
+         display: flex;
+         column-gap: 15px;
+         align-items: start;
+         justify-content: space-between; 
+      }
+   }
+   &__column {
+      width: 100%;
+      @media (min-width:$tablet){
+         &:first-child{
+            max-width: 238px;
+         }
+         &:nth-child(2){
+            max-width: 295px;
+         }
+         &:nth-child(3){
+            max-width: 145px;
+         }
+         &:last-child{
+            max-width: 244px;
+         }    
+      }
+   }
+   &__logo{
+      display: block;
+      margin-bottom: 20px;
+      @media (max-width:$tablet){
+         text-align: center;
+      }
+   }
+   &__socials {
+      display: none;
+      @media (min-width:$tablet){
+         margin-bottom: 20px;
+      }
+   }
+   &__lead {
+      color: $grayColor;
+      margin-bottom: 5px;
+      line-height: math.div(16 , 14);
+      max-width: 238px;
+   }
+   &__label {
+      display: flex;
+      align-items: center;
+      @include adaptiveValue("font-size", 20, 16);
+      font-weight: 700;
+      margin-bottom: 15px;
+      @media (max-width:$tablet){
+         margin-bottom: 10px;
+         padding-bottom: 11px;
+         border-bottom: 1px solid $lightGrayColor;
+         &::after{
+            content:'';
+            display: block;
+            margin-left: auto;
+            background: url('@img/icons/arrow-spoller.svg') right no-repeat;
+            width: 10px;
+            height: 6px;
+            transition: all 0.3s ease 0s;
+         }  
+         &._spoller-active{
+            border-bottom: 1px solid rgba(0, 0, 0, 0);
+            &::after{
+               transform: rotate(180deg);
+            }
+         }
+      }
+   }
+   &__menu {
+      @media (max-width:$tablet){
+         padding-bottom: 15px;
+      }
+      li{
+         &:not(:last-child) {
+            margin-bottom: 5px;
+         }
+      }
+      a{
+         @include adaptiveValue("font-size", 16, 14);
+         @media (any-hover: hover){
+            &:hover{
+               color: $hoverBlueColor;
+            }
+            &:active{
+               color: $clickBlueColor;
+            }
+         }
+      }
+   }
+   &__contacts{
+      @media (max-width:$tablet){
+         padding-bottom: 15px;
+      }
+   }
+   &__link {
+      display: flex;
+      align-items: start;
+      column-gap: 4px;
+      margin-bottom: 10px;
+      &.mail{
+         margin-bottom: 17px;
+      }
+      &.location{
+         margin-bottom: 17px;
+      }
+      &-email{
+         fill: $blueColor;
+         margin-right: 2px;
+      }
+      &-location{
+         fill: $blueColor;
+         min-width: 15px;
+         margin-right: 2px;
+      }
+      @media (any-hover: hover){
+         &:hover{
+            text-decoration: underline;
+         }
+      }
+   }
+   &__order-call{
+      width: 100%;
+      min-height: 52px;
+      color: #fff;
+
+      @include adaptiveValue("font-size", 16, 14);
+      font-weight: 700;
+      margin-top: 10px;
+   }
+   &__corpt{
+      margin-top: 10px;
+      min-height: 52px;
+      width: 100%;
+   }
+}
+
+//====================================================================================================

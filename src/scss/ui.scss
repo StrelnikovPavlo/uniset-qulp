@@ -1,0 +1,374 @@
+//<PAGES PADDING>========================================================================================================================================================
+[class*="home-page"]{
+   @include adaptiveValue("margin-bottom", 100, 80);
+}
+[class*="category-page"]{
+   @include adaptiveValue("margin-bottom", 100, 80);
+}
+[class*="reviews-page"]{
+   @include adaptiveValue("margin-bottom", 100, 80);
+}
+[class*="order-page"]{
+   @include adaptiveValue("margin-bottom", 100, 80);
+}
+[class*="blog-page"]{
+   @include adaptiveValue("margin-bottom", 100, 80);
+}
+[class*="comparison-page"]{
+   @include adaptiveValue("margin-bottom", 100, 80);
+}
+
+
+//<TITLES>========================================================================================================================================================
+.title-section{
+   text-align: center;
+   @include adaptiveValue("font-size", 35, 24);
+   font-weight: 700;
+   text-transform: uppercase;
+
+   padding-bottom: 10px;
+   position: relative;
+
+   &::after{
+      content:'';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      width: 320px;
+      height: 3px;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, #2566B0 50.52%, rgba(255, 255, 255, 0.00) 100%);
+      flex: 0 0 320px;
+   }
+   
+   &-white{
+      color: #fff;
+   }
+}
+//=====================================================================================
+.title-page{
+   @include adaptiveValue("font-size", 35, 24);
+   font-weight: 700;
+   text-transform: uppercase;
+   @include adaptiveValue("margin-bottom", 40, 20);
+   @include adaptiveValue("margin-top", 40, 20);
+}
+
+//<FLEX>========================================================================================================================================================
+.d-flex{
+   display: flex;
+   align-items: center;
+}
+
+.cntr{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+//<SALES>========================================================================================================================================================
+
+.sale{
+   display: inline-block;
+   position: relative;
+   z-index: 2;
+   border-radius: 20px;
+   padding: 3px 8px;
+
+   color: $whiteColor;
+   font-size: 12px;
+   line-height: math.div(18 , 12);
+   font-weight: 400;
+
+   &-green{
+      background: #21B863;
+      box-shadow: 0px 5px 15px 0px rgba(33, 184, 99, 0.33);
+   }
+
+   &-red{
+      background: #F9464C;
+      box-shadow: 0px 5px 15px 0px rgba(249, 70, 76, 0.33);
+   }
+
+   &-yellow{
+      background: #FFC803;
+      box-shadow: 0px 5px 15px 0px rgba(255, 200, 3, 0.33);
+   }
+}
+
+.status {
+   font-size: 14px;
+   &.green{
+      color: $greenColor;
+   }
+   &.red{
+      color: $redColor;
+   }
+}
+
+//<H1-H6>========================================================================================================================================================
+
+h1{
+   font-weight: 800;
+   @include adaptiveValue("font-size", 65, 28);
+   line-height: 106%;
+}
+h2{
+   @include adaptiveValue("font-size", 35, 24);
+}
+h3{
+   @include adaptiveValue("font-size", 25, 18);
+}
+h4{
+   @include adaptiveValue("font-size", 20, 16);
+}
+h5{
+   @include adaptiveValue("font-size", 16, 14);
+}
+h6{
+   @include adaptiveValue("font-size", 14, 12);
+}
+
+//========================================================================================================================================================
+.link-phone{
+   display: flex;
+   column-gap: 8px;
+   align-items: center !important;
+   white-space: nowrap;
+   .link-phone-icon{
+      fill: $blueColor;
+   }
+   @media (any-hover: hover){
+      &:hover{
+         text-decoration: underline;
+      }
+   }
+}
+
+//<SOCIALS>========================================================================================================================================================
+.socials{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   column-gap: 15px;
+   row-gap: 10px;
+   a{
+      width: 34px;
+		height: 34px;
+      background-color: $greenColor;
+		border-radius: 50%;
+      .instagram{
+         fill: #fff;
+      }
+      .facebook{
+         fill: #fff;
+      }
+      @media (any-hover: hover){
+         &:hover{
+            background-color: $hoverGreenColor;
+         }
+         &:active{
+            background-color: $clickGreenColor;
+         }
+      }
+   }
+}
+
+
+//<PAGINATION>========================================================================================================================================================
+
+.pagging{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   column-gap: 15px;
+   .swiper-pagination-bullet{
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      transition: all 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover{
+            background-color: $hoverGreenColor;
+         }
+         &:active{
+            background-color: $clickGreenColor;
+         }
+      }
+   }
+}
+
+.pagging-white{
+   .swiper-pagination-bullet{
+      background-color: $silverColor;
+   }
+   .swiper-pagination-bullet-active{
+      background-color: $greenColor;
+   }
+}
+.pagging-black{
+   .swiper-pagination-bullet{
+      background-color: #515151;
+   }
+   .swiper-pagination-bullet-active{
+      background-color: $greenColor;
+   }
+}
+
+//========================================================================================================================================================
+.swiper-slide{
+   &.transparent{
+      opacity: 0;
+   }
+}
+
+//========================================================================================================================================================
+
+
+.nav{
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 65px;
+   height: 35px;
+   &-green{
+      background-color: $greenColor;
+      box-shadow: 0px 5px 16px 0px rgba(80, 160, 85, 0.30);
+      transition: all 0.3s ease 0s;
+      @media (any-hover: hover){
+         &:hover{
+            background-color: $hoverGreenColor;
+         }
+         &:active{
+            background-color: $clickGreenColor;
+         }
+      }
+   }
+   &-prev{
+      &-icon{
+         fill: #ffffff00;
+         stroke: #fff;
+         transform: rotate(90deg);
+      }
+   }
+   &-next{
+      &-icon{
+         fill: #ffffff00;
+         stroke: #fff;
+         transform: rotate(-90deg);
+      }
+   }
+}
+
+//========================================================================================================================================================
+.products-carousel {
+   &__container {
+      position: relative;
+   }
+   &__title {
+   }
+   &__slider {
+      padding: 40px 20px;
+      margin: 0 -20px;
+   }
+   &__wrapper {
+   }
+   &__pagging{
+      margin-top: 40px;
+   }
+   &__nav{
+      display: none;
+      @media (min-width:1500px){
+         position: absolute;
+         top: 50%;
+         transform: translateY(-50%);
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         width: 100%;
+         &-prev{
+            left: 0;
+            transform: translateX(-85px);
+         }
+         &-next{
+            right: 0;
+            transform: translateX(45px);
+         }
+         .swiper-button-disabled{
+            background: #DADADA;
+            box-shadow: 0px 5px 16px 0px rgba(236, 236, 236, 0.30);
+         }    
+      }
+   }
+}
+//========================================================================================================================================================
+
+.details-more{
+   display: flex;
+   align-items: center;
+   color: $blueColor;
+   font-weight: 700;
+   column-gap: 10px;
+   transition: all 0.3s ease 0s;
+   .arrow-blue {
+      fill: $blueColor;
+      transition: all 0.3s ease 0s;
+   }
+   @media (any-hover: hover){
+      &:hover{
+         color: $hoverBlueColor;
+         .arrow-blue {
+            fill: $hoverBlueColor;
+         }
+      }
+      &:active{
+         color: $clickBlueColor;
+         .arrow-blue {
+            fill: $clickBlueColor;
+         }
+      }
+   }
+}
+//========================================================================================================================================================
+.star-yellow{
+   fill: #FFC803;
+}
+.star-gray{
+   fill: #ECECEC;
+}
+
+//========================================================================================================================================================
+.video-play{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   @include adaptiveValue("width", 80, 40);
+   @include adaptiveValue("height", 80, 40);
+   border-radius: 50%;
+   background-color: $greenColor;
+   transition: all 0.3s ease 0s;
+   &::before{
+      content:'';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-20%,-50%);
+      border: 16px solid transparent; 
+      border-left: 25px solid #D9D9D9;
+      @media (max-width:$mobile){
+         border: 10px solid transparent; 
+         border-left: 16px solid #D9D9D9;
+      }
+   }
+   @media (any-hover: hover){
+      &:hover{
+         background-color: $hoverGreenColor;
+      }
+      &:active{
+         background-color: $clickGreenColor;
+      }
+   }
+}
+//========================================================================================================================================================

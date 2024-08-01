@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/head/_head.htm',{
+"title":"умова згоди"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header/_header.htm',{})
+      <main class="home-page">
+         <nav aria-label="breadcrumb">
+            <div class="breadcrumb__container">
+               <ol class="breadcrumb">
+                  <li class="breadcrumb__item"><a href="#">Головна</a></li>
+                  <li class="breadcrumb__item _active" aria-current="page">Умова згоди</li>
+               </ol>
+            </div>
+         </nav>
+         <div class="home-page__consent consent-page">
+            <div class="consent-page__container">
+               <h1 class="consent-page__title title-page">умова згоди</h1>
+               <div class="consent-page__body">
+                  <div class="consent-page__section">
+                     <div class="consent-page__caption">Повернення товару</div>
+                     <ul class="consent-page__list">
+                        <li>Звернутися до ТОВ "Юнісет" і написати заяву на повернення грошових коштів;</li>
+                        <li>Повернути придбаний товар в належному вигляді, з повною комплектацією;</li>
+                        <li>Надати документи про покупку.</li>
+                     </ul>
+                  </div>
+                  <div class="consent-page__section">
+                     <div class="consent-page__caption">Повернення грошових коштів і обмін придбаного товару в нашому інтернет магазині</div>
+                     <p>Протягом 14 днів після придбання товару покупець може звернутися в наш офіс за адресою м Біла Церква, вул. Леваневського 58.</p>
+                     <div class="consent-page__label">Якщо на момент звернення на складі немає аналогічного товару для заміни, то покупець має право:</div>
+                     <ul class="consent-page__list">
+                        <li>Купити будь-який інший товар з асортименту (з перерахунком вартості).</li>
+                        <li>Обміняти товар на аналогічний при першому ж надходженні потрібного товару в продаж.</li>
+                        <li>Повернути виріб і отримати назад гроші у розмірі вартості повернутої продукції.</li>
+                     </ul>
+                     <p>Дані правила стосуються товарів належної якості і які не були використані покупцем і не зірвані товарні пломби.</p>
+                     <p>Повернення грошових коштів здійснюється протягом 7 робочих днів з моменту отримання товару та заяви про повернення коштів.</p>
+                  </div>
+                  <div class="consent-page__section">
+                     <div class="consent-page__caption">Права покупця в разі придбання товару неналежної якості.</div>
+                     <p>У разі виявлення істотних недоліків, які виникли з нашої вини покупець, в порядку і в терміни, встановлені законодавством (14 днів), має право за своїм вибором вимагати:</p>
+                     <ul class="consent-page__list">
+                        <li>Повернення грошових коштів сплачених за товар;</li>
+                        <li>Вимагати заміни товару на такий же товар або на аналогічний, з числа наявних;</li>
+                     </ul>
+                     <p>Повернення грошових коштів здійснюється способом, яким здійснювалась оплата - банківським переказом на зазначені покупцем у заяві реквізити або готівкою.</p>
+                     <p>Доставка товару в разі його обміну або повернення виконується за наш рахунок.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         @@include('html/global/application.htm',{})
+      </main>
+      @@include('html/footer/_footer.htm',{})
+   </div>
+   @@include('html/javascript/_js.htm',{})
+</body>
+
+</html>

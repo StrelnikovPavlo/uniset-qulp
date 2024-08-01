@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/head/_head.htm',{
+"title":"Замовлення"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header/_header.htm',{})
+      <main class="home-page">
+         <nav aria-label="breadcrumb">
+            <div class="breadcrumb__container">
+               <ol class="breadcrumb">
+                  <li class="breadcrumb__item"><a href="#">Головна</a></li>
+                  <li class="breadcrumb__item"><a href="#">Привідна техніка</a></li>
+                  <li class="breadcrumb__item _active" aria-current="page">Пристрої плавного пуску</li>
+               </ol>
+            </div>
+         </nav>
+         <div class="home-page__order order-details">
+            <div class="order-details__container">
+               <div class="order-details__title title-page">Замовлення</div>
+               <div class="order-details__help">
+                  <p>Ваше замовлення буде оброблено автоматично, в разі необхідності з вами зв’яжеться оператор.</p>
+                  <a href="#" class="order-details__message btn btn-green">Потрібна допомога?</a>
+               </div>
+               <div class="order-details__about">
+                  <div class="order-details__head">Про замовлення</div>
+                  <div class="order-details__content">
+                     <div class="order-details__line">
+                        <span class="order-details__label">Номер замовлення</span>
+                        <span class="order-details__value">89636966</span>
+                     </div>
+                     <div class="order-details__line">
+                        <span class="order-details__label">Дата доставки</span>
+                        <span class="order-details__value">11.10.2023</span>
+                     </div>
+                     <div class="order-details__line">
+                        <span class="order-details__label">Адреса доставки</span>
+                        <span class="order-details__value">Київ, вул.Освітня, б.74, кв.36</span>
+                     </div>
+                     <div class="order-details__line">
+                        <span class="order-details__label">Номер телефону</span>
+                        <span class="order-details__value">+38(096) 589-66-69</span>
+                     </div>
+                     <div class="order-details__line">
+                        <span class="order-details__label">Сума</span>
+                        <span class="order-details__value">61 100,46 ₴</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      @@include('html/footer/_footer.htm',{})
+   </div>
+   @@include('html/javascript/_js.htm',{})
+</body>
+
+</html>

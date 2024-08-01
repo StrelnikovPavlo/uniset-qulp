@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/head/_head.htm',{
+"title":"Пристрої плавного пуску"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header/_header.htm',{})
+      <main class="category-page category">
+         <nav aria-label="breadcrumb">
+            <div class="breadcrumb__container">
+               <ol class="breadcrumb">
+                  <li class="breadcrumb__item"><a href="#">Головна</a></li>
+                  <li class="breadcrumb__item"><a href="#">Привідна техніка</a></li>
+                  <li class="breadcrumb__item _active" aria-current="page">Пристрої плавного пуску</li>
+               </ol>
+            </div>
+         </nav>
+         <section class="category-page__body">
+            <div class="category__container">
+               <h1 class="title-page">Пристрої плавного пуску</h1>
+               <div class="category__row">
+                  <div class="category__filters">
+                     <div data-simplebar class="filter">
+                        <div data-spollers class="filter__wrapper">
+                           <div class="filter__head">
+                              <div class="filter__title">Фільтр</div>
+                              <button type="button" class="filter__close cntr">
+                                 <svg class="filter__close-icon" width="14" height="14">
+                                    <use xlink:href="@img/icons/icons.svg#close"></use>
+                                 </svg>
+                              </button>
+                           </div>
+                           <div class="filter__result filter-result">
+                              <div class="filter-result__row">
+                                 <div class="filter-result__col">
+                                    <div class="filter-result__title filter-result__title_small">Виробники</div>
+                                    <div class="filter-result__items">
+                                       <a href="#" class="filter-result__item">Eaton</a>
+                                    </div>
+                                 </div>
+                                 <div class="filter-result__col">
+                                    <div class="filter-result__title filter-result__title_small">Серія</div>
+                                    <div class="filter-result__items">
+                                       <a href="" class="filter-result__item">MCD 600</a>
+                                       <a href="" class="filter-result__item">DS7</a>
+                                    </div>
+                                 </div>
+                                 <div class="filter-result__col">
+                                    <div class="filter-result__title filter-result__title_small">Номінальна потужність, кВт</div>
+                                    <div class="filter-result__items">
+                                       <a href="" class="filter-result__item">1,5</a>
+                                       <a href="" class="filter-result__item">7,5</a>
+                                    </div>
+                                 </div>
+                                 <div class="filter-result__col">
+                                    <a href="#" class="filter-result__removed btn">Скинути все</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="filter__items">
+                              <div class="filter-item">
+                                 <div data-spoller class="filter-item__heading">
+                                    <div class="filter-item__title">Виробники</div>
+                                    <div class="filter-item__arrow">
+                                       <svg class="filter-item__arrow-icon" width="10" height="6">
+                                          <use xlink:href="@img/icons/icons.svg#lang-arrow"></use>
+                                       </svg>
+                                    </div>
+                                 </div>
+                                 <div class="filter-item__body filter-item__body_column">
+                                    <button type="button" class="filter-checkbox filter-checkbox_button-checkbox">
+                                       <div class="filter-checkbox__value">Eaton</div>
+                                       <div class="filter-checkbox__quantity">189</div>
+                                    </button>
+                                    <button type="button" class="filter-checkbox filter-checkbox_button-checkbox _disable">
+                                       <div class="filter-checkbox__value">Danfoss</div>
+                                    </button>
+                                 </div>
+                              </div>
+                              <div class="filter-item">
+                                 <div data-spoller class="filter-item__heading">
+                                    <div class="filter-item__title">Вартість</div>
+                                    <div class="filter-item__arrow">
+                                       <svg class="filter-item__arrow-icon" width="10" height="6">
+                                          <use xlink:href="@img/icons/icons.svg#lang-arrow"></use>
+                                       </svg>
+                                    </div>
+                                 </div>
+                                 <div class="filter-item__body">
+                                    <div class="filter-price">
+                                       <div class="filter-price__row">
+                                          <div class="filter-price__col">
+                                             <div class="filter-price__text">від</div>
+                                          </div>
+                                          <div class="filter-price__col">
+                                             <input type="text" class="filter-price__input" value="6 900">
+                                          </div>
+                                          <div class="filter-price__col">
+                                             <div class="filter-price__text">до</div>
+                                          </div>
+                                          <div class="filter-price__col">
+                                             <input type="text" class="filter-price__input" value="900 000">
+                                          </div>
+                                          <div class="filter-price__col">
+                                             <div class="filter-price__text">₴</div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="filter-item">
+                                 <div data-spoller class="filter-item__heading">
+                                    <div class="filter-item__title">Серія</div>
+                                    <div class="filter-item__arrow">
+                                       <svg class="filter-item__arrow-icon" width="10" height="6">
+                                          <use xlink:href="@img/icons/icons.svg#lang-arrow"></use>
+                                       </svg>
+                                    </div>
+                                 </div>
+                                 <div class="filter-item__body filter-item__body_column">
+                                    <button class="filter-checkbox filter-checkbox_button _active">
+                                       <span class="filter-checkbox__value">MCD 600</span>
+                                    </button>
+                                    <button class="filter-checkbox filter-checkbox_button">
+                                       <span class="filter-checkbox__value">MCD 202</span>
+                                    </button>
+                                    <button class="filter-checkbox filter-checkbox_button">
+                                       <span class="filter-checkbox__value">MCD 500</span>
+                                    </button>
+                                    <button class="filter-checkbox filter-checkbox_button _disable">
+                                       <span class="filter-checkbox__value">MCD 201</span>
+                                    </button>
+                                    <button class="filter-checkbox filter-checkbox_button _active">
+                                       <span class="filter-checkbox__value">DS7</span>
+                                    </button>
+                                    <button class="filter-checkbox filter-checkbox_button">
+                                       <span class="filter-checkbox__value">S811+</span>
+                                    </button>
+                                 </div>
+                              </div>
+                              <div class="filter-item">
+                                 <div data-spoller class="filter-item__heading">
+                                    <div class="filter-item__title">Номінальна потужність, кВт</div>
+                                    <div class="filter-item__arrow">
+                                       <svg class="filter-item__arrow-icon" width="10" height="6">
+                                          <use xlink:href="@img/icons/icons.svg#lang-arrow"></use>
+                                       </svg>
+                                    </div>
+                                 </div>
+                                 <div data-simplebar class="filter-item__body filter-item__body-height filter-item__body_column">
+                                    <button type="button" class="filter-checkbox filter-checkbox_button-checkbox">
+                                       <div class="filter-checkbox__value">1.5</div>
+                                    </button>
+                                    <button type="button" class="filter-checkbox filter-checkbox_button-checkbox">
+                                       <div class="filter-checkbox__value">4</div>
+                                    </button>
+                                    <button type="button" class="filter-checkbox filter-checkbox_button-checkbox">
+                                       <div class="filter-checkbox__value">7.5</div>
+                                    </button>
+                                    <button type="button" class="filter-checkbox filter-checkbox_button-checkbox">
+                                       <div class="filter-checkbox__value">15</div>
+                                    </button>
+                                    <button type="button" class="filter-checkbox filter-checkbox_button-checkbox">
+                                       <div class="filter-checkbox__value">18.5</div>
+                                    </button>
+                                    <button type="button" class="filter-checkbox filter-checkbox_button-checkbox">
+                                       <div class="filter-checkbox__value">30</div>
+                                    </button>
+                                    <button type="button" class="filter-checkbox filter-checkbox_button-checkbox">
+                                       <div class="filter-checkbox__value">40</div>
+                                    </button>
+                                 </div>
+                              </div>
+                              <div class="filter-item">
+                                 <div data-spoller class="filter-item__heading">
+                                    <div class="filter-item__title">Напруга управління</div>
+                                    <div class="filter-item__arrow">
+                                       <svg class="filter-item__arrow-icon" width="10" height="6">
+                                          <use xlink:href="@img/icons/icons.svg#lang-arrow"></use>
+                                       </svg>
+                                    </div>
+                                 </div>
+                                 <div class="filter-item__body filter-item__body_column">
+                                    <button type="button" class="filter-checkbox filter-checkbox_button-checkbox">
+                                       <div class="filter-checkbox__value">24В AC/DC</div>
+                                    </button>
+                                    <button type="button" class="filter-checkbox filter-checkbox_button-checkbox">
+                                       <div class="filter-checkbox__value">110/230В AC</div>
+                                    </button>
+                                    <button type="button" class="filter-checkbox filter-checkbox_button-checkbox">
+                                       <div class="filter-checkbox__value">110/230В AC</div>
+                                    </button>
+                                    <button type="button" class="filter-checkbox filter-checkbox_button-checkbox">
+                                       <div class="filter-checkbox__value">24В DC</div>
+                                    </button>
+                                 </div> 
+                              </div>
+                              <div class="filter-item">
+                                 <div data-spoller class="filter-item__heading">
+                                    <div class="filter-item__title">Номінальний струм AC-53, А</div>
+                                    <div class="filter-item__arrow">
+                                       <svg class="filter-item__arrow-icon" width="10" height="6">
+                                          <use xlink:href="@img/icons/icons.svg#lang-arrow"></use>
+                                       </svg>
+                                    </div>
+                                 </div>
+                                 <div data-simplebar class="filter-item__body filter-item__body-height filter-item__body_column">
+                                    <button type="button" class="filter-checkbox filter-checkbox_button-checkbox">
+                                       <div class="filter-checkbox__value">4</div>
+                                    </button>
+                                    <button type="button" class="filter-checkbox filter-checkbox_button-checkbox">
+                                       <div class="filter-checkbox__value">9</div>
+                                    </button>
+                                    <button type="button" class="filter-checkbox filter-checkbox_button-checkbox">
+                                       <div class="filter-checkbox__value">16</div>
+                                    </button>
+                                    <button type="button" class="filter-checkbox filter-checkbox_button-checkbox">
+                                       <div class="filter-checkbox__value">21</div>
+                                    </button>
+                                    <button type="button" class="filter-checkbox filter-checkbox_button-checkbox">
+                                       <div class="filter-checkbox__value">32</div>
+                                    </button>
+                                    <button type="button" class="filter-checkbox filter-checkbox_button-checkbox">
+                                       <div class="filter-checkbox__value">41</div>
+                                    </button>
+                                    <button type="button" class="filter-checkbox filter-checkbox_button-checkbox">
+                                       <div class="filter-checkbox__value">48</div>
+                                    </button>
+                                 </div>   
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="category__products products-category">
+                     <div class="products-category__head d-flex">
+                        <button type="button" class="products-category__filter btn">
+                           <svg class="products-category__filter-icon" width="17" height="17">
+                              <use xlink:href="@img/icons/icons.svg#filter"></use>
+                           </svg>
+                           <span>Фільтр</span>
+                        </button>
+                        <div class="products-category__sort sort-products">
+                           <label for="" class="sort-products__label">Сортувати</label>
+                           <div class="sort-products__select">
+                              <div class="sort-products__selected">
+                                 <span>За популярністю</span>
+                                 <svg class="sort-products__selected-icon" width="10" height="6">
+                                    <use xlink:href="@img/icons/icons.svg#lang-arrow"></use>
+                                 </svg>
+                              </div>
+                              <div class="sort-products__dropdown">
+                                 <a href="#" class="sort-products__value">За ціною</a>
+                                 <a href="#" class="sort-products__value">За датою</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="products-category__sort sort-products sort-products-quantity">
+                           <label for="" class="sort-products__label">Показати</label>
+                           <div class="sort-products__select">
+                              <div class="sort-products__selected">
+                                 <span>9</span>
+                                 <svg class="sort-products__selected-icon" width="10" height="6">
+                                    <use xlink:href="@img/icons/icons.svg#lang-arrow"></use>
+                                 </svg>
+                              </div>
+                              <div class="sort-products__dropdown">
+                                 <a href="#" class="sort-products__value">12</a>
+                                 <a href="#" class="sort-products__value">15</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="products-category__items">
+                        <div class="product-cart">
+                           <div class="product-cart__picture">
+                              <div class="product-cart__sales">
+                                 <div class="sale sale-red">Знижка %</div>
+                              </div>
+                              <a href="#" class="product-cart__img">
+                                 <img data-bg="@img/products/01.png" src="@img/products/01.png" alt="img">
+                              </a>
+                           </div>
+                           <div class="product-cart__content">
+                              <div class="product-cart__head">
+                                 <div class="product-cart__row">
+                                    <div>
+                                       <div class="product-cart__reviews d-flex">
+                                          <div class="product-cart__stars">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-gray.svg" alt="star">
+                                          </div>
+                                          <a href="#" class="product-cart__quantity">15 відгуків</a>
+                                       </div>
+                                       <div class="status green">У наявності</div>
+                                    </div>
+                                    <a href="#" class="product-cart__scales cntr">
+                                       <svg class="scales" width="26" height="26">
+                                          <use xlink:href="@img/icons/icons.svg#scales-green"></use>
+                                       </svg>
+                                    </a>
+                                 </div>
+                                 <a href="#" class="product-cart__title">132F0001 Перетворювач частоти Danfoss VLT Micro Drive FC-51</a>
+                              </div>
+                              <div class="product-cart__main">
+                                 <div class="product-cart__line">
+                                    <span>Серія</span>
+                                    <span>Фронтальний</span>
+                                 </div>
+                                 <div class="product-cart__line">
+                                    <span>Напруга на вході, В</span>
+                                    <span>230</span>
+                                 </div>
+                                 <div class="product-cart__line">
+                                    <span>Макс. робочий струм, А</span>
+                                    <span>1.2</span>
+                                 </div>
+                              </div>
+                              <div class="product-cart__footer">
+                                 <div class="product-cart__price d-flex">
+                                    <div class="product-cart__old-price">5 677,50 ₴</div>
+                                    <span>5 588,50 ₴</span>
+                                 </div>
+                                 <button type="button" class="product-cart__buy btn btn-blue btn-product _active">Купити</btn>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="product-cart">
+                           <div class="product-cart__picture">
+                              <div class="product-cart__sales">
+                                 <div class="sale sale-red">Знижка %</div>
+                              </div>
+                              <a href="#" class="product-cart__img">
+                                 <img data-bg="@img/products/01.png" src="@img/products/01.png" alt="img">
+                              </a>
+                           </div>
+                           <div class="product-cart__content">
+                              <div class="product-cart__head">
+                                 <div class="product-cart__row">
+                                    <div>
+                                       <div class="product-cart__reviews d-flex">
+                                          <div class="product-cart__stars">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-gray.svg" alt="star">
+                                          </div>
+                                          <a href="#" class="product-cart__quantity">15 відгуків</a>
+                                       </div>
+                                       <div class="status green">У наявності</div>
+                                    </div>
+                                    <a href="#" class="product-cart__scales cntr">
+                                       <svg class="scales" width="26" height="26">
+                                          <use xlink:href="@img/icons/icons.svg#scales-green"></use>
+                                       </svg>
+                                    </a>
+                                 </div>
+                                 <a href="#" class="product-cart__title">132F0001 Перетворювач частоти Danfoss VLT Micro Drive FC-51</a>
+                              </div>
+                              <div class="product-cart__main">
+                                 <div class="product-cart__line">
+                                    <span>Серія</span>
+                                    <span>Фронтальний</span>
+                                 </div>
+                                 <div class="product-cart__line">
+                                    <span>Напруга на вході, В</span>
+                                    <span>230</span>
+                                 </div>
+                                 <div class="product-cart__line">
+                                    <span>Макс. робочий струм, А</span>
+                                    <span>1.2</span>
+                                 </div>
+                              </div>
+                              <div class="product-cart__footer">
+                                 <div class="product-cart__price d-flex">
+                                    <div class="product-cart__old-price">5 677,50 ₴</div>
+                                    <span>5 588,50 ₴</span>
+                                 </div>
+                                 <button type="button" class="product-cart__buy btn btn-blue btn-product _active">Купити</btn>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="product-cart">
+                           <div class="product-cart__picture">
+                              <div class="product-cart__sales">
+                                 <div class="sale sale-red">Знижка %</div>
+                              </div>
+                              <a href="#" class="product-cart__img">
+                                 <img data-bg="@img/products/01.png" src="@img/products/01.png" alt="img">
+                              </a>
+                           </div>
+                           <div class="product-cart__content">
+                              <div class="product-cart__head">
+                                 <div class="product-cart__row">
+                                    <div>
+                                       <div class="product-cart__reviews d-flex">
+                                          <div class="product-cart__stars">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-gray.svg" alt="star">
+                                          </div>
+                                          <a href="#" class="product-cart__quantity">15 відгуків</a>
+                                       </div>
+                                       <div class="status green">У наявності</div>
+                                    </div>
+                                    <a href="#" class="product-cart__scales cntr">
+                                       <svg class="scales" width="26" height="26">
+                                          <use xlink:href="@img/icons/icons.svg#scales-green"></use>
+                                       </svg>
+                                    </a>
+                                 </div>
+                                 <a href="#" class="product-cart__title">132F0001 Перетворювач частоти Danfoss VLT Micro Drive FC-51</a>
+                              </div>
+                              <div class="product-cart__main">
+                                 <div class="product-cart__line">
+                                    <span>Серія</span>
+                                    <span>Фронтальний</span>
+                                 </div>
+                                 <div class="product-cart__line">
+                                    <span>Напруга на вході, В</span>
+                                    <span>230</span>
+                                 </div>
+                                 <div class="product-cart__line">
+                                    <span>Макс. робочий струм, А</span>
+                                    <span>1.2</span>
+                                 </div>
+                              </div>
+                              <div class="product-cart__footer">
+                                 <div class="product-cart__price d-flex">
+                                    <div class="product-cart__old-price">5 677,50 ₴</div>
+                                    <span>5 588,50 ₴</span>
+                                 </div>
+                                 <button type="button" class="product-cart__buy btn btn-blue btn-product _active">Купити</btn>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="product-cart">
+                           <div class="product-cart__picture">
+                              <div class="product-cart__sales">
+                                 <div class="sale sale-red">Знижка %</div>
+                              </div>
+                              <a href="#" class="product-cart__img">
+                                 <img data-bg="@img/products/01.png" src="@img/products/01.png" alt="img">
+                              </a>
+                           </div>
+                           <div class="product-cart__content">
+                              <div class="product-cart__head">
+                                 <div class="product-cart__row">
+                                    <div>
+                                       <div class="product-cart__reviews d-flex">
+                                          <div class="product-cart__stars">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-gray.svg" alt="star">
+                                          </div>
+                                          <a href="#" class="product-cart__quantity">15 відгуків</a>
+                                       </div>
+                                       <div class="status green">У наявності</div>
+                                    </div>
+                                    <a href="#" class="product-cart__scales cntr">
+                                       <svg class="scales" width="26" height="26">
+                                          <use xlink:href="@img/icons/icons.svg#scales-green"></use>
+                                       </svg>
+                                    </a>
+                                 </div>
+                                 <a href="#" class="product-cart__title">132F0001 Перетворювач частоти Danfoss VLT Micro Drive FC-51</a>
+                              </div>
+                              <div class="product-cart__main">
+                                 <div class="product-cart__line">
+                                    <span>Серія</span>
+                                    <span>Фронтальний</span>
+                                 </div>
+                                 <div class="product-cart__line">
+                                    <span>Напруга на вході, В</span>
+                                    <span>230</span>
+                                 </div>
+                                 <div class="product-cart__line">
+                                    <span>Макс. робочий струм, А</span>
+                                    <span>1.2</span>
+                                 </div>
+                              </div>
+                              <div class="product-cart__footer">
+                                 <div class="product-cart__price d-flex">
+                                    <div class="product-cart__old-price">5 677,50 ₴</div>
+                                    <span>5 588,50 ₴</span>
+                                 </div>
+                                 <button type="button" class="product-cart__buy btn btn-blue btn-product _active">Купити</btn>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="product-cart">
+                           <div class="product-cart__picture">
+                              <div class="product-cart__sales">
+                                 <div class="sale sale-red">Знижка %</div>
+                              </div>
+                              <a href="#" class="product-cart__img">
+                                 <img data-bg="@img/products/01.png" src="@img/products/01.png" alt="img">
+                              </a>
+                           </div>
+                           <div class="product-cart__content">
+                              <div class="product-cart__head">
+                                 <div class="product-cart__row">
+                                    <div>
+                                       <div class="product-cart__reviews d-flex">
+                                          <div class="product-cart__stars">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-gray.svg" alt="star">
+                                          </div>
+                                          <a href="#" class="product-cart__quantity">15 відгуків</a>
+                                       </div>
+                                       <div class="status green">У наявності</div>
+                                    </div>
+                                    <a href="#" class="product-cart__scales cntr">
+                                       <svg class="scales" width="26" height="26">
+                                          <use xlink:href="@img/icons/icons.svg#scales-green"></use>
+                                       </svg>
+                                    </a>
+                                 </div>
+                                 <a href="#" class="product-cart__title">132F0001 Перетворювач частоти Danfoss VLT Micro Drive FC-51</a>
+                              </div>
+                              <div class="product-cart__main">
+                                 <div class="product-cart__line">
+                                    <span>Серія</span>
+                                    <span>Фронтальний</span>
+                                 </div>
+                                 <div class="product-cart__line">
+                                    <span>Напруга на вході, В</span>
+                                    <span>230</span>
+                                 </div>
+                                 <div class="product-cart__line">
+                                    <span>Макс. робочий струм, А</span>
+                                    <span>1.2</span>
+                                 </div>
+                              </div>
+                              <div class="product-cart__footer">
+                                 <div class="product-cart__price d-flex">
+                                    <div class="product-cart__old-price">5 677,50 ₴</div>
+                                    <span>5 588,50 ₴</span>
+                                 </div>
+                                 <button type="button" class="product-cart__buy btn btn-blue btn-product _active">Купити</btn>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="product-cart">
+                           <div class="product-cart__picture">
+                              <div class="product-cart__sales">
+                                 <div class="sale sale-red">Знижка %</div>
+                              </div>
+                              <a href="#" class="product-cart__img">
+                                 <img data-bg="@img/products/01.png" src="@img/products/01.png" alt="img">
+                              </a>
+                           </div>
+                           <div class="product-cart__content">
+                              <div class="product-cart__head">
+                                 <div class="product-cart__row">
+                                    <div>
+                                       <div class="product-cart__reviews d-flex">
+                                          <div class="product-cart__stars">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-gray.svg" alt="star">
+                                          </div>
+                                          <a href="#" class="product-cart__quantity">15 відгуків</a>
+                                       </div>
+                                       <div class="status green">У наявності</div>
+                                    </div>
+                                    <a href="#" class="product-cart__scales cntr">
+                                       <svg class="scales" width="26" height="26">
+                                          <use xlink:href="@img/icons/icons.svg#scales-green"></use>
+                                       </svg>
+                                    </a>
+                                 </div>
+                                 <a href="#" class="product-cart__title">132F0001 Перетворювач частоти Danfoss VLT Micro Drive FC-51</a>
+                              </div>
+                              <div class="product-cart__main">
+                                 <div class="product-cart__line">
+                                    <span>Серія</span>
+                                    <span>Фронтальний</span>
+                                 </div>
+                                 <div class="product-cart__line">
+                                    <span>Напруга на вході, В</span>
+                                    <span>230</span>
+                                 </div>
+                                 <div class="product-cart__line">
+                                    <span>Макс. робочий струм, А</span>
+                                    <span>1.2</span>
+                                 </div>
+                              </div>
+                              <div class="product-cart__footer">
+                                 <div class="product-cart__price d-flex">
+                                    <div class="product-cart__old-price">5 677,50 ₴</div>
+                                    <span>5 588,50 ₴</span>
+                                 </div>
+                                 <button type="button" class="product-cart__buy btn btn-blue btn-product _active">Купити</btn>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="product-cart">
+                           <div class="product-cart__picture">
+                              <div class="product-cart__sales">
+                                 <div class="sale sale-red">Знижка %</div>
+                              </div>
+                              <a href="#" class="product-cart__img">
+                                 <img data-bg="@img/products/01.png" src="@img/products/01.png" alt="img">
+                              </a>
+                           </div>
+                           <div class="product-cart__content">
+                              <div class="product-cart__head">
+                                 <div class="product-cart__row">
+                                    <div>
+                                       <div class="product-cart__reviews d-flex">
+                                          <div class="product-cart__stars">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-yellow.svg" alt="star">
+                                             <img src="@img/icons/star-gray.svg" alt="star">
+                                          </div>
+                                          <a href="#" class="product-cart__quantity">15 відгуків</a>
+                                       </div>
+                                       <div class="status green">У наявності</div>
+                                    </div>
+                                    <a href="#" class="product-cart__scales cntr">
+                                       <svg class="scales" width="26" height="26">
+                                          <use xlink:href="@img/icons/icons.svg#scales-green"></use>
+                                       </svg>
+                                    </a>
+                                 </div>
+                                 <a href="#" class="product-cart__title">132F0001 Перетворювач частоти Danfoss VLT Micro Drive FC-51</a>
+                              </div>
+                              <div class="product-cart__main">
+                                 <div class="product-cart__line">
+                                    <span>Серія</span>
+                                    <span>Фронтальний</span>
+                                 </div>
+                                 <div class="product-cart__line">
+                                    <span>Напруга на вході, В</span>
+                                    <span>230</span>
+                                 </div>
+                                 <div class="product-cart__line">
+                                    <span>Макс. робочий струм, А</span>
+                                    <span>1.2</span>
+                                 </div>
+                              </div>
+                              <div class="product-cart__footer">
+                                 <div class="product-cart__price d-flex">
+                                    <div class="product-cart__old-price">5 677,50 ₴</div>
+                                    <span>5 588,50 ₴</span>
+                                 </div>
+                                 <button type="button" class="product-cart__buy btn btn-blue btn-product _active">Купити</btn>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <a href="#" class="products-category__show-more btn">Показати ще</a>
+                     @@include('html/pagination/_pagging.htm',{})
+                  </div>
+               </div>
+            </div>
+         </section>
+         @@include('html/global/product-carousel.htm',{
+            "title":"Переглянуті товари"
+         })
+         <div class="category-page__about about-home">
+            <div data-showmore class="about-home__container">
+               <div data-showmore-content class="about-home__text">
+                  <p>Ласкаво просимо до найкращого в Україні місця для всіх ваших потреб в електрообладнанні! У нашому магазині ми пишаємося тим, що є вибором номер один для високоякісних електротоварів, надаючи клієнтам першокласний сервіс та широкий вибір.</p>
+                  <p>Ласкаво просимо до найкращого в Україні місця для всіх ваших потреб в електрообладнанні! У нашому магазині ми пишаємося тим, що є вибором номер один для високоякісних електротоварів, надаючи клієнтам першокласний сервіс та широкий вибір.</p>
+                  <p>Довіряйте кращим - обирайте Uniset, щоб задовольнити всі ваші потреби в електрообладнанні та дізнайтеся, чому ми є неперевершеним вибором електрообладнання в Україні!</p>
+                  <p>Ласкаво просимо до найкращого в Україні місця для всіх ваших потреб в електрообладнанні! У нашому магазині ми пишаємося тим, що є вибором номер один для високоякісних електротоварів, надаючи клієнтам першокласний сервіс та широкий вибір.</p>
+                  <p>Довіряйте кращим - обирайте Uniset, щоб задовольнити всі ваші потреби в електрообладнанні та дізнайтеся, чому ми є неперевершеним вибором електрообладнання в Україні!</p>
+                  <p>Ласкаво просимо до найкращого в Україні місця для всіх ваших потреб в електрообладнанні! У нашому магазині ми пишаємося тим, що є вибором номер один для високоякісних електротоварів, надаючи клієнтам першокласний сервіс та широкий вибір.</p>
+               </div>
+               <button type="button" data-showmore-button class="about-home__more details-more">
+                  <span>Детальніше</span>
+                  <svg class="arrow-blue" width="26" height="18">
+                     <use xlink:href="@img/icons/icons.svg#arrow-right-blue"></use>
+                  </svg>
+               </button>
+            </div>
+         </div>
+         @@include('html/global/application.htm',{})
+      </main>
+      @@include('html/footer/_footer.htm',{})
+   </div>
+   @@include('html/javascript/_js.htm',{})
+</body>
+
+</html>

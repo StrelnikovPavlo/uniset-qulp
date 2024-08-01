@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/head/_head.htm',{
+"title":"Привідна техніка"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header/_header.htm',{})
+      <main class="category-page">
+         <nav aria-label="breadcrumb">
+            <div class="breadcrumb__container">
+               <ol class="breadcrumb">
+                  <li class="breadcrumb__item"><a href="#">Головна</a></li>
+                  <li class="breadcrumb__item"><a href="#">Привідна техніка</a></li>
+                  <li class="breadcrumb__item _active" aria-current="page">Пристрої плавного пуску</li>
+               </ol>
+            </div>
+         </nav>
+         <div class="category-page__equipment equipment">
+            <div class="equipment__container">
+               <div class="equipment__title title-page">Привідна техніка</div>
+               <div class="equipment__items">
+                  <a href="#" class="equipment__block block-equipment">
+                     <div href="#" class="block-equipment__img cntr">
+                        <img src="@img/equipment/01.png" alt="img">
+                     </div>
+                     <div class="block-equipment__link d-flex">
+                        <span>Перетворювачі частоти</span>
+                        <svg class="block-equipment__link-icon" width="8" height="14">
+                           <use xlink:href="@img/icons/icons.svg#arrow-right-white"></use>
+                        </svg>
+                     </div>
+                  </a>
+                  <a href="#" class="equipment__block block-equipment">
+                     <div href="#" class="block-equipment__img cntr">
+                        <img src="@img/equipment/02.png" alt="img">
+                     </div>
+                     <div class="block-equipment__link d-flex">
+                        <span>Пристрої плавного пуску</span>
+                        <svg class="block-equipment__link-icon" width="8" height="14">
+                           <use xlink:href="@img/icons/icons.svg#arrow-right-white"></use>
+                        </svg>
+                     </div>
+                  </a>
+                  <a href="#" class="equipment__block block-equipment">
+                     <div class="block-equipment__img cntr">
+                        <img src="@img/equipment/03.png" alt="img">
+                     </div>
+                     <div class="block-equipment__link d-flex">
+                        <span>Редуктори</span>
+                        <svg class="block-equipment__link-icon" width="8" height="14">
+                           <use xlink:href="@img/icons/icons.svg#arrow-right-white"></use>
+                        </svg>
+                     </div>
+                  </a>
+                  <a href="#" class="equipment__block block-equipment">
+                     <div class="block-equipment__img cntr">
+                        <img src="@img/equipment/04.png" alt="img">
+                     </div>
+                     <div class="block-equipment__link d-flex">
+                        <span>Електродвигуни</span>
+                        <svg class="block-equipment__link-icon" width="8" height="14">
+                           <use xlink:href="@img/icons/icons.svg#arrow-right-white"></use>
+                        </svg>
+                     </div>
+                  </a>
+                  <a href="#" class="equipment__block block-equipment">
+                     <div class="block-equipment__img cntr">
+                        <img src="@img/equipment/05.png" alt="img">
+                     </div>
+                     <div class="block-equipment__link d-flex">
+                        <span>Панель управління, монтажний комплект</span>
+                        <svg class="block-equipment__link-icon" width="8" height="14">
+                           <use xlink:href="@img/icons/icons.svg#arrow-right-white"></use>
+                        </svg>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+         @@include('html/global/brands-carousel.htm',{})
+         @@include('html/global/product-carousel.htm',{
+            "title":"нові товари"
+         })
+         @@include('html/global/description.htm',{})
+         @@include('html/global/application.htm',{})
+      </main>
+      @@include('html/footer/_footer.htm',{})
+   </div>
+   @@include('html/javascript/_js.htm',{})
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/head/_head.htm',{
+"title":"виробники"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header/_header.htm',{})
+      <main class="home-page">
+         <nav aria-label="breadcrumb">
+            <div class="breadcrumb__container">
+               <ol class="breadcrumb">
+                  <li class="breadcrumb__item"><a href="#">Головна</a></li>
+                  <li class="breadcrumb__item"><a href="#">Бренди</a></li>
+                  <li class="breadcrumb__item _active" aria-current="page">EMTAS</li>
+               </ol>
+            </div>
+         </nav>
+         <div class="home-page__brand brand-page">
+            <div class="brand-page__container">
+               <div class="brand-page__title title-page">EMTAS</div>
+               <div class="brand-page__body">
+                  <div class="brand-page__row">
+                     <div class="brand-page__img cntr">
+                        <img src="@img/emtas.png" alt="img">
+                     </div>
+                     <div class="brand-page__about">
+                        <p>EMTAŞ A.Ş., один з перших виробників електродвигунів в Туреччині. Завод був заснований ELSAN Elektrik San. ve Tic. У ВИГЛЯДІ. Компанія, яка спочатку могла виробляти стандартні електродвигуни потужністю до 18,5 кВт, в основному з імпортними деталями і у вигляді збірки, постійно росла і розвивалася, сьогодні двигуни стандарту IEC потужністю до 400 кВт і на додаток до цього, 12 основних типів двигунів і генераторів , а також двигуни спеціального призначення відповідно до потреб замовника дійшло до розробки і виготовлення двигунів.</p>
+                        <p>Компанія, яка має найширший асортимент продукції в області електродвигунів в нашій країні, може задовольнити майже всі види вимог до електродвигунів за допомогою продуктів, які вона випускає на ринок під брендами EMTAŞ і ELSSANMOT. Крім того, наша компанія може запропонувати своїм клієнтам різні продукти, такі як вибухозахищені двигуни, двигуни великої потужності і високовольтні двигуни зарубіжних компаній, які вона представляє. На заводі, що працює на відкритій площі близько 17000 м2 і закритої площі 7000 м2 в районі Чанкая в Анкарі, ретельно відібрана сировина, таке як магнітний лист, катушечная дріт, чавун, алюміній, перетворюється на високоякісну продукцію більш ніж 130 персоналом під керівництвом досвідчених спеціалістів.</p>
+                        <ul>
+                           <li>Lorem ipsum dolor sit.</li>
+                           <li>Lorem ipsum dolor sit.</li>
+                           <li>Lorem ipsum dolor sit.</li>
+                        </ul>
+                        <ol>
+                           <li>Lorem ipsum dolor sit.</li>
+                           <li>Lorem ipsum dolor sit.</li>
+                           <li>Lorem ipsum dolor sit.</li>
+                        </ol>
+                        <a href="#">Lorem</a>
+                     </div>
+                  </div>
+                  <div class="brand-page__about">
+                     <p>Компанія ELSAN, яка завжди прагне до виробництва з використанням найбільш підходящих технологій, пишається тим, що зробила важливий внесок у перетворення Туреччини в країну-експортера з країни-імпортера двигунів.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="home-page__technology brand-technology">
+            <div class="brand-technology__container">
+               <div class="brand-technology__title title-section">привідна техніка</div>
+               <div class="brand-technology__items">
+                  <a href="#" class="equipment__block block-equipment">
+                     <div href="#" class="block-equipment__img cntr">
+                        <img src="@img/equipment/01.png" alt="img">
+                     </div>
+                     <div class="block-equipment__link d-flex">Перетворювачі частоти</div>
+                  </a>
+                  <a href="#" class="equipment__block block-equipment">
+                     <div href="#" class="block-equipment__img cntr">
+                        <img src="@img/equipment/02.png" alt="img">
+                     </div>
+                     <div class="block-equipment__link d-flex">Пристрої плавного пуску</div>
+                  </a>
+                  <a href="#" class="equipment__block block-equipment">
+                     <div class="block-equipment__img cntr">
+                        <img src="@img/equipment/03.png" alt="img">
+                     </div>
+                     <div class="block-equipment__link d-flex">Редуктори</div>
+                  </a>
+                  <a href="#" class="equipment__block block-equipment">
+                     <div class="block-equipment__img cntr">
+                        <img src="@img/equipment/04.png" alt="img">
+                     </div>
+                     <div class="block-equipment__link d-flex">Електродвигуни</div>
+                  </a>
+               </div>
+            </div>
+         </div>
+         @@include('html/global/description.htm',{})
+         @@include('html/global/application.htm',{})
+      </main>
+      @@include('html/footer/_footer.htm',{})
+   </div>
+   @@include('html/javascript/_js.htm',{})
+</body>
+
+</html>

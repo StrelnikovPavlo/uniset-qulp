@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="uk">
+	@@include('html/head/_head.htm',{
+		"title":"Головна сторінка"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/header/_header.htm',{})
+			<main class="home-page">
+				<div class="home-page__hero hero">
+					<div class="hero__container">
+						<div class="hero__slider slider-hero swiper">
+							<div class="slider-hero__body swiper-wrapper">
+								<div class="slider-hero__slide swiper-slide">
+									<span class="slider-hero__bg">
+										<img data-bg="@img/home/hero.jpg" src="@img/home/hero.jpg" alt="img">
+									</span>
+									<div class="slider-hero__content">
+										<div class="slider-hero__title">Надійний партнер, сучасні рішення</div>
+										<p class="slider-hero__subtitle">Електротехнічна продукція, привідне обладнання, послуги проєктування, збирання електротехнічних шаф та монтажу</p>
+										<a data-popup="#buy-one-click" href="#" class="slider-hero__more btn btn-blue">Дізнатися більше</a>
+									</div>
+									<div class="slider-hero__img">
+										<img data-bg="@img/home/slide-img.png" src="@img/home/slide-img.png" alt="">
+									</div>
+								</div>
+								<div class="slider-hero__slide swiper-slide">
+									<span class="slider-hero__bg">
+										<img data-bg="@img/home/hero.jpg" src="@img/home/hero.jpg" alt="img">
+									</span>
+									<div class="slider-hero__content">
+										<div class="slider-hero__title">Надійний партнер</div>
+										<p class="slider-hero__subtitle">Електротехнічна продукція, привідне обладнання, послуги проєктування, збирання електротехнічних шаф та монтажу</p>
+										<a href="#" class="slider-hero__more btn btn-blue">Дізнатися більше</a>
+									</div>
+									<div class="slider-hero__img">
+										<img data-bg="@img/home/slide-img.png" src="@img/home/slide-img.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="slider-hero__pagging pagging pagging-black"></div>
+						</div>
+					</div>
+				</div>
+				@@include('html/global/brands-carousel.htm',{})
+				@@include('html/global/product-carousel.htm',{
+					"title":"Переглянуті товари"
+				})
+				<div class="home-page__catalog catalog-home">
+					<div class="catalog-home__container">
+						<div class="catalog-home__title title-section">каталог</div>
+						<div class="catalog-home__body">
+							<div class="catalog-home__grid">
+								<a href="#" class="catalog-home__block block-catalog-home">
+									<div class="block-catalog-home__img">
+										<img data-bg="@img/catalog/02.png" src="@img/catalog/02.png" alt="img">
+									</div>
+									<div class="block-catalog-home__content">
+										<div class="block-catalog-home__qnt">550 товарів</div>
+										<div class="block-catalog-home__title">Привідна техніка</div>
+										<p class="block-catalog-home__text">Перетворювачі частоти, пристрої плавного пуску, дроселі, тормозні резистори, синус-фільтри</p>
+										<div class="block-catalog-home__more">
+											<svg class="arrow-green" width="25" height="18">
+												<use xlink:href="@img/icons/icons.svg#arrow-green"></use>
+											</svg>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="catalog-home__block block-catalog-home">
+									<div class="block-catalog-home__img">
+										<img data-bg="@img/catalog/02.png" src="@img/catalog/02.png" alt="img">
+									</div>
+									<div class="block-catalog-home__content">
+										<div class="block-catalog-home__qnt">550 товарів</div>
+										<div class="block-catalog-home__title">Привідна техніка</div>
+										<p class="block-catalog-home__text">Перетворювачі частоти, пристрої плавного пуску, дроселі, тормозні резистори, синус-фільтри</p>
+										<div class="block-catalog-home__more">
+											<svg class="arrow-green" width="25" height="18">
+												<use xlink:href="@img/icons/icons.svg#arrow-green"></use>
+											</svg>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="catalog-home__grid">
+								<a href="#" class="catalog-home__block block-catalog-home">
+									<div class="block-catalog-home__img">
+										<img data-bg="@img/catalog/02.png" src="@img/catalog/02.png" alt="img">
+									</div>
+									<div class="block-catalog-home__content">
+										<div class="block-catalog-home__qnt">550 товарів</div>
+										<div class="block-catalog-home__title">Привідна техніка</div>
+										<p class="block-catalog-home__text">Перетворювачі частоти, пристрої плавного пуску, дроселі, тормозні резистори, синус-фільтри</p>
+										<div class="block-catalog-home__more">
+											<svg class="arrow-green" width="25" height="18">
+												<use xlink:href="@img/icons/icons.svg#arrow-green"></use>
+											</svg>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="catalog-home__block block-catalog-home">
+									<div class="block-catalog-home__img">
+										<img data-bg="@img/catalog/02.png" src="@img/catalog/02.png" alt="img">
+									</div>
+									<div class="block-catalog-home__content">
+										<div class="block-catalog-home__qnt">550 товарів</div>
+										<div class="block-catalog-home__title">Привідна техніка</div>
+										<p class="block-catalog-home__text">Перетворювачі частоти, пристрої плавного пуску, дроселі, тормозні резистори, синус-фільтри</p>
+										<div class="block-catalog-home__more">
+											<svg class="arrow-green" width="25" height="18">
+												<use xlink:href="@img/icons/icons.svg#arrow-green"></use>
+											</svg>
+										</div>
+									</div>
+								</a>
+							</div>
+							<a href="#" class="catalog-home__block block-catalog-home">
+								<div class="block-catalog-home__img">
+									<img data-bg="@img/catalog/02.png" src="@img/catalog/02.png" alt="img">
+								</div>
+								<div class="block-catalog-home__content">
+									<div class="block-catalog-home__qnt">550 товарів</div>
+									<div class="block-catalog-home__title">Привідна техніка</div>
+									<p class="block-catalog-home__text">Перетворювачі частоти, пристрої плавного пуску, дроселі, тормозні резистори, синус-фільтри</p>
+									<div class="block-catalog-home__more">
+										<svg class="arrow-green" width="25" height="18">
+											<use xlink:href="@img/icons/icons.svg#arrow-green"></use>
+										</svg>
+									</div>
+								</div>
+							</a>
+							<div class="catalog-home__grid">
+								<a href="#" class="catalog-home__block block-catalog-home">
+									<div class="block-catalog-home__img">
+										<img data-bg="@img/catalog/02.png" src="@img/catalog/02.png" alt="img">
+									</div>
+									<div class="block-catalog-home__content">
+										<div class="block-catalog-home__qnt">550 товарів</div>
+										<div class="block-catalog-home__title">Привідна техніка</div>
+										<p class="block-catalog-home__text">Перетворювачі частоти, пристрої плавного пуску, дроселі, тормозні резистори, синус-фільтри</p>
+										<div class="block-catalog-home__more">
+											<svg class="arrow-green" width="25" height="18">
+												<use xlink:href="@img/icons/icons.svg#arrow-green"></use>
+											</svg>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="catalog-home__block block-catalog-home">
+									<div class="block-catalog-home__img">
+										<img data-bg="@img/catalog/02.png" src="@img/catalog/02.png" alt="img">
+									</div>
+									<div class="block-catalog-home__content">
+										<div class="block-catalog-home__qnt">550 товарів</div>
+										<div class="block-catalog-home__title">Привідна техніка</div>
+										<p class="block-catalog-home__text">Перетворювачі частоти, пристрої плавного пуску, дроселі, тормозні резистори, синус-фільтри</p>
+										<div class="block-catalog-home__more">
+											<svg class="arrow-green" width="25" height="18">
+												<use xlink:href="@img/icons/icons.svg#arrow-green"></use>
+											</svg>
+										</div>
+									</div>
+								</a>
+							</div>
+							<a href="#" class="catalog-home__block block-catalog-home">
+								<div class="block-catalog-home__img">
+									<img data-bg="@img/catalog/02.png" src="@img/catalog/02.png" alt="img">
+								</div>
+								<div class="block-catalog-home__content">
+									<div class="block-catalog-home__qnt">550 товарів</div>
+									<div class="block-catalog-home__title">Привідна техніка</div>
+									<p class="block-catalog-home__text">Перетворювачі частоти, пристрої плавного пуску, дроселі, тормозні резистори, синус-фільтри</p>
+									<div class="block-catalog-home__more">
+										<svg class="arrow-green" width="25" height="18">
+											<use xlink:href="@img/icons/icons.svg#arrow-green"></use>
+										</svg>
+									</div>
+								</div>
+							</a>
+							<div class="catalog-home__grid">
+								<a href="#" class="catalog-home__block block-catalog-home">
+									<div class="block-catalog-home__img">
+										<img data-bg="@img/catalog/02.png" src="@img/catalog/02.png" alt="img">
+									</div>
+									<div class="block-catalog-home__content">
+										<div class="block-catalog-home__qnt">550 товарів</div>
+										<div class="block-catalog-home__title">Привідна техніка</div>
+										<p class="block-catalog-home__text">Перетворювачі частоти, пристрої плавного пуску, дроселі, тормозні резистори, синус-фільтри</p>
+										<div class="block-catalog-home__more">
+											<svg class="arrow-green" width="25" height="18">
+												<use xlink:href="@img/icons/icons.svg#arrow-green"></use>
+											</svg>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="catalog-home__block block-catalog-home">
+									<div class="block-catalog-home__img">
+										<img data-bg="@img/catalog/02.png" src="@img/catalog/02.png" alt="img">
+									</div>
+									<div class="block-catalog-home__content">
+										<div class="block-catalog-home__qnt">550 товарів</div>
+										<div class="block-catalog-home__title">Привідна техніка</div>
+										<p class="block-catalog-home__text">Перетворювачі частоти, пристрої плавного пуску, дроселі, тормозні резистори, синус-фільтри</p>
+										<div class="block-catalog-home__more">
+											<svg class="arrow-green" width="25" height="18">
+												<use xlink:href="@img/icons/icons.svg#arrow-green"></use>
+											</svg>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="catalog-home__grid">
+								<a href="#" class="catalog-home__block block-catalog-home">
+									<div class="block-catalog-home__img">
+										<img data-bg="@img/catalog/02.png" src="@img/catalog/02.png" alt="img">
+									</div>
+									<div class="block-catalog-home__content">
+										<div class="block-catalog-home__qnt">550 товарів</div>
+										<div class="block-catalog-home__title">Привідна техніка</div>
+										<p class="block-catalog-home__text">Перетворювачі частоти, пристрої плавного пуску, дроселі, тормозні резистори, синус-фільтри</p>
+										<div class="block-catalog-home__more">
+											<svg class="arrow-green" width="25" height="18">
+												<use xlink:href="@img/icons/icons.svg#arrow-green"></use>
+											</svg>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="catalog-home__block block-catalog-home">
+									<div class="block-catalog-home__img">
+										<img src="@img/catalog/02.png" alt="img">
+									</div>
+									<div class="block-catalog-home__content">
+										<div class="block-catalog-home__qnt">550 товарів</div>
+										<div class="block-catalog-home__title">Привідна техніка</div>
+										<p class="block-catalog-home__text">Перетворювачі частоти, пристрої плавного пуску, дроселі, тормозні резистори, синус-фільтри</p>
+										<div class="block-catalog-home__more">
+											<svg class="arrow-green" width="25" height="18">
+												<use xlink:href="@img/icons/icons.svg#arrow-green"></use>
+											</svg>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<button type="button" class="catalog-home__button btn">Показати ще</button>
+					</div>
+				</div>
+				@@include('html/global/product-carousel.htm',{
+					"title":"Рекомендовані"
+				})
+				@@include('html/global/articls.htm',{
+					"title":"Статті та огляди"
+				})
+				@@include('html/global/product-carousel.htm',{
+					"title":"Нові товари"
+				})
+				@@include('html/global/description.htm',{})
+				@@include('html/global/application.htm',{})
+			</main>
+			@@include('html/footer/_footer.htm',{})
+		</div>
+		@@include('html/modals/_popup.htm',{})
+		@@include('html/javascript/_js.htm',{})
+	</body>
+</html>

@@ -1,0 +1,144 @@
+@use "sass:math";
+
+// Підключення міксинів ===========================================================================================================================================================================================================================================================================
+@import "base/mixins";
+
+// Підключити, якщо є локальні файли шрифтів
+@import "fonts/fonts";
+
+// За замовчуванням шрифт ==============================================================================================================================================================================================================================================================================
+$fontFamily: "Gilroy";
+$fontSize: 16px; 
+
+// Основні кольори
+$mainColor: #181616; // Колір шрифту за замовчуванням
+$redColor: #F84147;
+
+$blueColor: #2566B0;
+$hoverBlueColor: #397AC4;
+$clickBlueColor: #11529C;
+
+$greenColor: #50A055;
+$hoverGreenColor: #6DC073;
+$clickGreenColor: #3C8C41;
+
+$grayColor: #969696;
+$lightGrayColor: #DADADA;
+$silverColor: #ECECEC;
+$whiteColor: #ffffff;
+
+// Налаштування адаптивної сітки ===============================================================================================================================================================================================================================================================================================
+
+$minWidth: 360;
+$maxWidth: 1920;
+$maxWidthContainer: 1240;
+$containerPadding: 40;
+
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+$pc: em($containerWidth);
+$laptop: em(1199.98);
+$tablet: em(991.98);
+$mobile: em(767.98);
+$mobileSmall: em(479.98);
+
+$responsiveType: 1;
+
+// Обнулення ============================================================================================================================================================================================== =============================================================================================== ===============================================================================================
+@import "base/null";
+
+// Стилі тега BODY ============================================================================================================================================================================================================================================================================================================================================================================================
+body {
+	background-color: #fff;
+	font-weight: 400;
+	.lock & {
+		overflow: hidden;
+		touch-action: none;
+		overscroll-behavior: none;
+	}
+	.loaded & {
+	}
+}
+
+// Оболонка wrapper ============================================================================================================================================================================================================================================================================================================================================================================================================================================
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	@supports (overflow: clip) {
+		overflow: clip;
+	}
+	> main {
+		flex: 1 1 auto;
+	}
+	> * {
+		min-width: 0;
+	}
+}
+// Обмежуючий контейнер ======================================================================================================================================================================================================================
+@if ($responsiveType==1) {
+	[class*="__container"] {
+		@if ($maxWidthContainer>0) {
+			max-width: rem($containerWidth);
+			margin: 0 auto;
+		}
+		@if ($containerPadding>0) {
+			@if ($maxWidthContainer>0) {
+				padding: 0 rem(math.div($containerPadding, 2));
+			} @else {
+				@include adaptiveValue("padding-left", math.div($containerPadding, 2), 15);
+				@include adaptiveValue("padding-right", math.div($containerPadding, 2), 15);
+			}
+		}
+	}
+} @else {
+	[class*="__container"] {
+		margin: 0 auto;
+		@if ($maxWidthContainer>0) {
+			max-width: rem($containerWidth);
+		} @else {
+			@if ($containerPadding>0) {
+				padding: 0 rem(math.div($containerPadding, 2));
+			}
+		}
+		@media (max-width: $pc) {
+			max-width: rem(970);
+		}
+		@media (max-width: $tablet) {
+			max-width: rem(750);
+		}
+		@media (max-width: $mobile) {
+			max-width: none;
+			@if ($containerPadding>0 and $maxWidthContainer>0) {
+				padding: 0 rem(math.div($containerPadding, 2));
+			}
+		}
+	}
+}
+
+@import "base";
+
+@import "ui";
+
+@import "header/header";
+@import "footer/footer";
+@import "templates/cart-product";
+@import "templates/article";
+@import "templates/breadcrumbs";
+
+@import "pages/home";
+@import "pages/category";
+@import "pages/reviews";
+@import "pages/404";
+@import "pages/order-about";
+@import "pages/result-search";
+@import "pages/manufacturers";
+@import "pages/contacts";
+@import "pages/consent";
+@import "pages/brand";
+@import "pages/product-card";
+@import "pages/to-order";
+@import "pages/blog";
+@import "pages/comparison";
+

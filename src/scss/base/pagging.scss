@@ -1,0 +1,52 @@
+.pagging {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+	// .pagging__arrow
+	&__arrow {
+		display: block;
+		margin: 0 10px;
+		.pag-nav{
+			fill: #fff;
+			stroke: $greenColor;
+			transition: all 0.3s ease 0s;
+			&-left{
+				transform: rotate(-180deg);
+			}
+			@media (any-hover: hover){
+				&:hover{
+					stroke: $hoverGreenColor;
+				}
+				&:active{
+					stroke: $clickGreenColor;
+				}
+			}
+		}
+		&._noactive{
+			.pag-nav{
+				stroke: #DADADA;
+			}
+		}
+	}
+	// .pagging__list
+	&__list {
+		display: flex;
+		align-items: center;
+		column-gap: 10px;
+	}
+	// .pagging__item
+	&__item {
+		width: 29px;
+		height: 27px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 5px;
+		&._active {
+			background-color: $greenColor;
+			color: #fff;
+			font-weight: 700;
+		}
+	}
+}

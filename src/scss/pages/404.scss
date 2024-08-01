@@ -1,0 +1,47 @@
+.error-page {
+   background-color: $silverColor;
+   position: relative;
+   padding-left: 20px;
+   padding-right: 20px;
+   @include adaptiveValue("padding-top", 226, 150);
+   @include adaptiveValue("padding-bottom", 320, 150);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   &__img {
+      img{
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%,-50%);
+         max-width: 100%;   
+      }
+   }
+   &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      @include adaptiveValue("row-gap", 37, 20);
+      max-width: 875px;
+      margin: 0 auto;
+   }
+   &__label {
+      @include adaptiveValue("font-size", 35, 25);
+      font-weight: 700;
+      text-transform: uppercase;
+   }
+   &__text {
+      font-size: 20px;
+      @include adaptiveValue("font-size", 20, 16);
+      line-height: math.div(22 , 20);
+   }
+   &__home {
+      padding: 16px 70px;
+      font-weight: 700;
+   }
+}
